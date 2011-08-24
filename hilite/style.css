@@ -1,0 +1,55 @@
+body {  color: white;  font-family: Menlo; font-size: 12.0;}
+    
+    /* the color for context lines (when specified with line ranges) */
+    .context {  color: gray; }
+    
+    .keyword { color: #C87632; font-weight: bold; }
+    .type { color: #D64738; }
+    .usertype, .classname { color: #6D9BBD; }
+    .string { color: #91AB56; font-family: Menlo; }
+    .regexp { color: #99289C; }
+    .specialchar { color: #93AD57; font-family: Menlo; }
+    .comment { color: #BC9358; font-style: italic; }
+    .number { color: #9AB55B; }
+    .preproc { color: #C57431; font-weight: bold; }
+    .symbol { color: #CCCCF9; }
+    .function { color: #F4C36B; font-weight: bold; }
+    .cbracket { color: #FFFFFF; }
+    .todo { font-weight: bold; background-color: cyan; }
+    
+    /* line numbers */
+    .linenum { color: black; font-family: monospace; }
+    
+    /* Internet related */
+    .url { color: blue; text-decoration: underline; font-family: monospace; }
+    
+    /* other elements for ChangeLog and Log files */
+    .date { color: blue; font-weight: bold; }
+    .time, .file { color: darkblue; font-weight: bold; }
+    .ip, .name { color: darkgreen; }
+    
+    /* for Prolog, Perl */
+    .variable { color: darkgreen; }
+    .italics { color: darkgreen; font-style: italic; }
+    .bold { color: darkgreen; font-weight: bold; }
+    
+    /* for LaTeX */
+    .underline { color: darkgreen; text-decoration: underline; }
+    .fixed { color: green; font-family: monospace; }
+    .argument, .optionalargument { color: darkgreen; }
+    .math { color: orange; }
+    .bibtex { color: blue; }
+    
+    /* for diffs */
+    .oldfile { color: orange; }
+    .newfile { color: darkgreen; }
+    .difflines { color: blue; }
+    
+    /* for css */
+    .selector { color: purple; }
+    .property { color: blue; }
+    .value { color: darkgreen; font-style: italic; }
+    
+    /* for Oz */
+    .atom { color: orange; }
+    .meta { font-style: italic; }

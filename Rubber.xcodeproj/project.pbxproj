@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		933EF8B0125BEC2F00845394 /* ADTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 933EF8AF125BEC2F00845394 /* ADTextAttachment.m */; };
+		933EF8E5125C113000845394 /* ADTextMungingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933EF8E4125C113000845394 /* ADTextMungingController.m */; };
+		93466DA513F57A56008DEA3B /* ADTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93466DA413F57A56008DEA3B /* ADTextView.m */; };
+		934CFF8414055AE000C24AFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 934CFF8214055AE000C24AFF /* InfoPlist.strings */; };
+		934CFF8714055AE000C24AFF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 934CFF8614055AE000C24AFF /* main.c */; };
+		934CFF8C14055BB200C24AFF /* hilite.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 934CFF8B14055BB200C24AFF /* hilite.entitlements */; };
+		934CFF8E14055C6100C24AFF /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 934CFF8D14055C6100C24AFF /* style.css */; };
+		934CFF9014055C6E00C24AFF /* data in Resources */ = {isa = PBXBuildFile; fileRef = 934CFF8F14055C6E00C24AFF /* data */; };
+		934CFF9214055CFD00C24AFF /* stuffediggy.hilite.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = 934CFF7E14055AE000C24AFF /* stuffediggy.hilite.xpc */; };
+		934CFF931405610200C24AFF /* libsource-highlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 938F2E7613FB3CA9000023AB /* libsource-highlight.a */; };
+		937A641E1256A2E900B0D4AC /* ADEquationRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 937A641D1256A2E900B0D4AC /* ADEquationRenderer.m */; };
+		937A64481256AA4E00B0D4AC /* ASCIIMathML.js in Resources */ = {isa = PBXBuildFile; fileRef = 937A641F1256A80A00B0D4AC /* ASCIIMathML.js */; };
+		93A346C2140168C500159929 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A346C1140168C400159929 /* WebKit.framework */; };
+		93B3928913E75DD300FD29DD /* rubber.icns in Resources */ = {isa = PBXBuildFile; fileRef = 93B3928813E75DD300FD29DD /* rubber.icns */; };
+		93B7C8DC1404126B004D19C4 /* ADCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B7C8DB1404126B004D19C4 /* ADCodeController.m */; };
+		93C1B8CC1253B3FE00E437E0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C1B8CB1253B3FE00E437E0 /* Cocoa.framework */; };
+		93C1B8D11253B3FE00E437E0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93C1B8CF1253B3FE00E437E0 /* InfoPlist.strings */; };
+		93C1B8D31253B3FE00E437E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C1B8D21253B3FE00E437E0 /* main.m */; };
+		93C1B8D61253B3FE00E437E0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C1B8D41253B3FE00E437E0 /* MainMenu.xib */; };
+		93C1B8D91253B3FE00E437E0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 93C1B8D71253B3FE00E437E0 /* Credits.rtf */; };
+		93C1B8DC1253B3FE00E437E0 /* ADDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C1B8DB1253B3FE00E437E0 /* ADDocument.m */; };
+		93C1B8DF1253B3FE00E437E0 /* ADDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C1B8DD1253B3FE00E437E0 /* ADDocument.xib */; };
+		93C1B8EC1253B50200E437E0 /* ADDocumentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C1B8EB1253B50200E437E0 /* ADDocumentView.m */; };
+		93DB911512624FF100A1ECA0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93DB911412624FF100A1ECA0 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		934CFF9114055CDC00C24AFF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/XPCServices;
+			dstSubfolderSpec = 1;
+			files = (
+				934CFF9214055CFD00C24AFF /* stuffediggy.hilite.xpc in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		931A60CE13F30471002737FD /* sourcehighlight.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = sourcehighlight.h; sourceTree = "<group>"; };
+		931A60CF13F30482002737FD /* langmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = langmap.h; sourceTree = "<group>"; };
+		931A60D013F3095D002737FD /* textstyleformattercollection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = textstyleformattercollection.h; sourceTree = "<group>"; };
+		933EF8AE125BEC2F00845394 /* ADTextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADTextAttachment.h; sourceTree = "<group>"; };
+		933EF8AF125BEC2F00845394 /* ADTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADTextAttachment.m; sourceTree = "<group>"; };
+		933EF8E3125C113000845394 /* ADTextMungingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADTextMungingController.h; sourceTree = "<group>"; };
+		933EF8E4125C113000845394 /* ADTextMungingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADTextMungingController.m; sourceTree = "<group>"; };
+		93466DA313F57A56008DEA3B /* ADTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADTextView.h; sourceTree = "<group>"; };
+		93466DA413F57A56008DEA3B /* ADTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADTextView.m; sourceTree = "<group>"; };
+		934CFF7E14055AE000C24AFF /* stuffediggy.hilite.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stuffediggy.hilite.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		934CFF8114055AE000C24AFF /* hilite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hilite-Info.plist"; sourceTree = "<group>"; };
+		934CFF8314055AE000C24AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		934CFF8514055AE000C24AFF /* hilite-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hilite-Prefix.pch"; sourceTree = "<group>"; };
+		934CFF8614055AE000C24AFF /* main.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = main.c; sourceTree = "<group>"; };
+		934CFF8B14055BB200C24AFF /* hilite.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = hilite.entitlements; sourceTree = "<group>"; };
+		934CFF8D14055C6100C24AFF /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		934CFF8F14055C6E00C24AFF /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
+		937A641C1256A2E900B0D4AC /* ADEquationRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADEquationRenderer.h; sourceTree = "<group>"; };
+		937A641D1256A2E900B0D4AC /* ADEquationRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADEquationRenderer.m; sourceTree = "<group>"; };
+		937A641F1256A80A00B0D4AC /* ASCIIMathML.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ASCIIMathML.js; sourceTree = "<group>"; };
+		938F2E7313FB2A35000023AB /* Rubber.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Rubber.entitlements; sourceTree = "<group>"; };
+		938F2E7613FB3CA9000023AB /* libsource-highlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libsource-highlight.a"; sourceTree = "<group>"; };
+		93A346C1140168C400159929 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		93B3928813E75DD300FD29DD /* rubber.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = rubber.icns; sourceTree = "<group>"; };
+		93B7C8DA1404126B004D19C4 /* ADCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCodeController.h; sourceTree = "<group>"; };
+		93B7C8DB1404126B004D19C4 /* ADCodeController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = ADCodeController.m; sourceTree = "<group>"; };
+		93C1B8C81253B3FE00E437E0 /* Rubber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rubber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93C1B8CB1253B3FE00E437E0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		93C1B8CD1253B3FE00E437E0 /* Rubber-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rubber-Info.plist"; sourceTree = "<group>"; };
+		93C1B8CE1253B3FE00E437E0 /* Rubber_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rubber_Prefix.pch; sourceTree = "<group>"; };
+		93C1B8D01253B3FE00E437E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		93C1B8D21253B3FE00E437E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93C1B8D51253B3FE00E437E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		93C1B8D81253B3FE00E437E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		93C1B8DA1253B3FE00E437E0 /* ADDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADDocument.h; sourceTree = "<group>"; };
+		93C1B8DB1253B3FE00E437E0 /* ADDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADDocument.m; sourceTree = "<group>"; };
+		93C1B8DE1253B3FE00E437E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ADDocument.xib; sourceTree = "<group>"; };
+		93C1B8EA1253B50200E437E0 /* ADDocumentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADDocumentView.h; sourceTree = "<group>"; };
+		93C1B8EB1253B50200E437E0 /* ADDocumentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADDocumentView.m; sourceTree = "<group>"; };
+		93DB911412624FF100A1ECA0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		934CFF7B14055AE000C24AFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934CFF931405610200C24AFF /* libsource-highlight.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C1B8C51253B3FE00E437E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93A346C2140168C500159929 /* WebKit.framework in Frameworks */,
+				93C1B8CC1253B3FE00E437E0 /* Cocoa.framework in Frameworks */,
+				93DB911512624FF100A1ECA0 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		934CFF7F14055AE000C24AFF /* hilite */ = {
+			isa = PBXGroup;
+			children = (
+				934CFF8614055AE000C24AFF /* main.c */,
+				93A346C314018A9900159929 /* libsource-highlight Headers */,
+				934CFF8014055AE000C24AFF /* Supporting Files */,
+			);
+			path = hilite;
+			sourceTree = "<group>";
+		};
+		934CFF8014055AE000C24AFF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				934CFF8B14055BB200C24AFF /* hilite.entitlements */,
+				934CFF8F14055C6E00C24AFF /* data */,
+				934CFF8D14055C6100C24AFF /* style.css */,
+				934CFF8114055AE000C24AFF /* hilite-Info.plist */,
+				934CFF8214055AE000C24AFF /* InfoPlist.strings */,
+				934CFF8514055AE000C24AFF /* hilite-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93A346C314018A9900159929 /* libsource-highlight Headers */ = {
+			isa = PBXGroup;
+			children = (
+				931A60CF13F30482002737FD /* langmap.h */,
+				931A60CE13F30471002737FD /* sourcehighlight.h */,
+				931A60D013F3095D002737FD /* textstyleformattercollection.h */,
+			);
+			name = "libsource-highlight Headers";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		93C1B8B91253B3FE00E437E0 = {
+			isa = PBXGroup;
+			children = (
+				93C1B8C01253B3FE00E437E0 /* Classes */,
+				93C1B8C11253B3FE00E437E0 /* Other Sources */,
+				93C1B8C21253B3FE00E437E0 /* Resources */,
+				934CFF7F14055AE000C24AFF /* hilite */,
+				93C1B8C31253B3FE00E437E0 /* Frameworks */,
+				93C1B8C91253B3FE00E437E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93C1B8C01253B3FE00E437E0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				93C1B8DA1253B3FE00E437E0 /* ADDocument.h */,
+				93C1B8DB1253B3FE00E437E0 /* ADDocument.m */,
+				93C1B8EA1253B50200E437E0 /* ADDocumentView.h */,
+				93C1B8EB1253B50200E437E0 /* ADDocumentView.m */,
+				937A641C1256A2E900B0D4AC /* ADEquationRenderer.h */,
+				937A641D1256A2E900B0D4AC /* ADEquationRenderer.m */,
+				933EF8AE125BEC2F00845394 /* ADTextAttachment.h */,
+				933EF8AF125BEC2F00845394 /* ADTextAttachment.m */,
+				933EF8E3125C113000845394 /* ADTextMungingController.h */,
+				933EF8E4125C113000845394 /* ADTextMungingController.m */,
+				93466DA313F57A56008DEA3B /* ADTextView.h */,
+				93466DA413F57A56008DEA3B /* ADTextView.m */,
+				93B7C8DA1404126B004D19C4 /* ADCodeController.h */,
+				93B7C8DB1404126B004D19C4 /* ADCodeController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		93C1B8C11253B3FE00E437E0 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				93C1B8CE1253B3FE00E437E0 /* Rubber_Prefix.pch */,
+				93C1B8D21253B3FE00E437E0 /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		93C1B8C21253B3FE00E437E0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				938F2E7313FB2A35000023AB /* Rubber.entitlements */,
+				93B3928813E75DD300FD29DD /* rubber.icns */,
+				937A641F1256A80A00B0D4AC /* ASCIIMathML.js */,
+				93C1B8CD1253B3FE00E437E0 /* Rubber-Info.plist */,
+				93C1B8CF1253B3FE00E437E0 /* InfoPlist.strings */,
+				93C1B8D41253B3FE00E437E0 /* MainMenu.xib */,
+				93C1B8D71253B3FE00E437E0 /* Credits.rtf */,
+				93C1B8DD1253B3FE00E437E0 /* ADDocument.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		93C1B8C31253B3FE00E437E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				938F2E7613FB3CA9000023AB /* libsource-highlight.a */,
+				93A346C1140168C400159929 /* WebKit.framework */,
+				93DB911412624FF100A1ECA0 /* QuartzCore.framework */,
+				93C1B8CB1253B3FE00E437E0 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93C1B8C91253B3FE00E437E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93C1B8C81253B3FE00E437E0 /* Rubber.app */,
+				934CFF7E14055AE000C24AFF /* stuffediggy.hilite.xpc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		934CFF7D14055AE000C24AFF /* hilite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 934CFF8A14055AE000C24AFF /* Build configuration list for PBXNativeTarget "hilite" */;
+			buildPhases = (
+				934CFF7A14055AE000C24AFF /* Sources */,
+				934CFF7B14055AE000C24AFF /* Frameworks */,
+				934CFF7C14055AE000C24AFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hilite;
+			productName = hilite;
+			productReference = 934CFF7E14055AE000C24AFF /* stuffediggy.hilite.xpc */;
+			productType = "com.apple.product-type.bundle";
+		};
+		93C1B8C71253B3FE00E437E0 /* Rubber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93C1B8E21253B3FE00E437E0 /* Build configuration list for PBXNativeTarget "Rubber" */;
+			buildPhases = (
+				93C1B8C41253B3FE00E437E0 /* Sources */,
+				93C1B8C51253B3FE00E437E0 /* Frameworks */,
+				93C1B8C61253B3FE00E437E0 /* Resources */,
+				934CFF9114055CDC00C24AFF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rubber;
+			productName = Rubber;
+			productReference = 93C1B8C81253B3FE00E437E0 /* Rubber.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93C1B8BB1253B3FE00E437E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
+			buildConfigurationList = 93C1B8BE1253B3FE00E437E0 /* Build configuration list for PBXProject "Rubber" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 93C1B8B91253B3FE00E437E0;
+			productRefGroup = 93C1B8C91253B3FE00E437E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93C1B8C71253B3FE00E437E0 /* Rubber */,
+				934CFF7D14055AE000C24AFF /* hilite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		934CFF7C14055AE000C24AFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934CFF8414055AE000C24AFF /* InfoPlist.strings in Resources */,
+				934CFF8C14055BB200C24AFF /* hilite.entitlements in Resources */,
+				934CFF8E14055C6100C24AFF /* style.css in Resources */,
+				934CFF9014055C6E00C24AFF /* data in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C1B8C61253B3FE00E437E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				937A64481256AA4E00B0D4AC /* ASCIIMathML.js in Resources */,
+				93C1B8D11253B3FE00E437E0 /* InfoPlist.strings in Resources */,
+				93C1B8D61253B3FE00E437E0 /* MainMenu.xib in Resources */,
+				93C1B8D91253B3FE00E437E0 /* Credits.rtf in Resources */,
+				93C1B8DF1253B3FE00E437E0 /* ADDocument.xib in Resources */,
+				93B3928913E75DD300FD29DD /* rubber.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		934CFF7A14055AE000C24AFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934CFF8714055AE000C24AFF /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C1B8C41253B3FE00E437E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C1B8D31253B3FE00E437E0 /* main.m in Sources */,
+				93C1B8DC1253B3FE00E437E0 /* ADDocument.m in Sources */,
+				93C1B8EC1253B50200E437E0 /* ADDocumentView.m in Sources */,
+				937A641E1256A2E900B0D4AC /* ADEquationRenderer.m in Sources */,
+				933EF8B0125BEC2F00845394 /* ADTextAttachment.m in Sources */,
+				933EF8E5125C113000845394 /* ADTextMungingController.m in Sources */,
+				93466DA513F57A56008DEA3B /* ADTextView.m in Sources */,
+				93B7C8DC1404126B004D19C4 /* ADCodeController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		934CFF8214055AE000C24AFF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				934CFF8314055AE000C24AFF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		93C1B8CF1253B3FE00E437E0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93C1B8D01253B3FE00E437E0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		93C1B8D41253B3FE00E437E0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93C1B8D51253B3FE00E437E0 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		93C1B8D71253B3FE00E437E0 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93C1B8D81253B3FE00E437E0 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		93C1B8DD1253B3FE00E437E0 /* ADDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93C1B8DE1253B3FE00E437E0 /* en */,
+			);
+			name = ADDocument.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		934CFF8814055AE000C24AFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = hilite.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hilite/hilite-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "hilite/hilite-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				MACH_O_TYPE = mh_execute;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-lobjc",
+					"-lboost_regex-mt",
+				);
+				PRODUCT_NAME = "stuffediggy.$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = xpc;
+			};
+			name = Debug;
+		};
+		934CFF8914055AE000C24AFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = hilite.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hilite/hilite-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "hilite/hilite-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				MACH_O_TYPE = mh_execute;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-lobjc",
+					"-lboost_regex-mt",
+				);
+				PRODUCT_NAME = "stuffediggy.$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = xpc;
+			};
+			name = Release;
+		};
+		93C1B8E01253B3FE00E437E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include/boost;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lboost_regex-mt";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		93C1B8E11253B3FE00E437E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include/boost;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = "-lboost_regex-mt";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		93C1B8E31253B3FE00E437E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = Rubber.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Rubber_Prefix.pch;
+				INFOPLIST_FILE = "Rubber-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local,
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = Rubber;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		93C1B8E41253B3FE00E437E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = Rubber.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Rubber_Prefix.pch;
+				INFOPLIST_FILE = "Rubber-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local,
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = Rubber;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		934CFF8A14055AE000C24AFF /* Build configuration list for PBXNativeTarget "hilite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				934CFF8814055AE000C24AFF /* Debug */,
+				934CFF8914055AE000C24AFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		93C1B8BE1253B3FE00E437E0 /* Build configuration list for PBXProject "Rubber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93C1B8E01253B3FE00E437E0 /* Debug */,
+				93C1B8E11253B3FE00E437E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93C1B8E21253B3FE00E437E0 /* Build configuration list for PBXNativeTarget "Rubber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93C1B8E31253B3FE00E437E0 /* Debug */,
+				93C1B8E41253B3FE00E437E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93C1B8BB1253B3FE00E437E0 /* Project object */;
+}
