@@ -191,13 +191,10 @@
                 NSLog(@"invalid");
             }
         } else if (type == XPC_TYPE_DICTIONARY) {
-            NSLog(@"lo, tis a dictionary");
             NSString *output;
             if (xpc_dictionary_get_string(reply, "programOutput") == NULL) {
-                NSLog(@"compiler");
                 output = [[NSString stringWithCString:xpc_dictionary_get_string(reply, "compilerOutput") encoding:NSUTF8StringEncoding] copy];
             } else {
-                NSLog(@"program");
                 output = [[NSString stringWithCString:xpc_dictionary_get_string(reply, "programOutput") encoding:NSUTF8StringEncoding] copy];                
             }
             [vc appendStringToConsole:output];
