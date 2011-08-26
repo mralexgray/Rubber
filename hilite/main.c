@@ -43,40 +43,6 @@ static void hilite_peer_event_handler(xpc_connection_t peer, xpc_object_t event)
         sourceHighlight.highlight(iss, outstr, lang);
         
         xpc_dictionary_set_string(reply, "html", outstr.str().c_str());
-        
-      /*  if (xpc_array_get_count(stack) >= 2) {
-            int64_t lhs = xpc_array_get_int64(stack, xpc_array_get_count(stack) - 1);
-            int64_t rhs = xpc_array_get_int64(stack, xpc_array_get_count(stack) - 2);
-            
-            int64_t result = 0;
-            if (op == OperatorAdd) {
-                result = lhs + rhs;
-            } else if (op == OperatorSub) {
-                result = lhs - rhs;
-            } else if (op == OperatorMul) {
-                result = lhs * rhs;
-            } else if (op == OperatorDiv) {
-                result = lhs / rhs;
-            }
-            
-            xpc_object_t new_stack = xpc_array_create(NULL, 0);
-            
-            xpc_array_apply(stack, ^ (size_t idx, xpc_object_t value) {
-                if (idx >= xpc_array_get_count(stack) - 2) {
-                    return (bool)false;
-                }
-                xpc_array_append_value(new_stack, value);
-                return (bool)true;
-            });
-            
-            xpc_array_set_int64(new_stack, XPC_ARRAY_APPEND, result);
-            
-            xpc_dictionary_set_value(reply, "stack", new_stack);
-            xpc_release(new_stack);
-        } else {
-            xpc_dictionary_set_value(reply, "stack", stack);
-        }*/
-        
         xpc_connection_send_message(peer, reply);
         xpc_release(reply);
 	}

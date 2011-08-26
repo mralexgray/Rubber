@@ -228,6 +228,23 @@
     [[self currentTextView] dedentSelection];
 }
 
+- (IBAction)runCode:(id)sender {
+    
+    ADTextView *textView = [self currentTextView];
+    if ([[textView typingAttributes] valueForKey:@"ADCodeAttribute"] == nil) {
+        NSBeep();
+        return;
+    }
+    
+    NSRange codeRange;
+    NSString *language = [[textView textStorage] attribute:@"ADCodeAttribute" atIndex:[textView selectedRange].location longestEffectiveRange:&codeRange inRange:NSMakeRange(0, [[textView string] length])];
+    
+    NSRange temp = [[textView layoutManager] glyphRangeForCharacterRange:codeRange actualCharacterRange:nil];
+    NSRect codeRect = [[textView layoutManager] boundingRectForGlyphRange:temp inTextContainer:[textView textContainer]];
+    
+    [codeController runCode:[[textView string] substringWithRange:codeRange] inLanguage:language displayRect:codeRect inView:textView];
+}
+
 - (ADTextView *)currentTextView
 {
     NSArray *textContainers = [layoutManager textContainers];

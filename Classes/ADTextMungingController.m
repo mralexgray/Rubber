@@ -15,7 +15,9 @@
 - (void)textDidChange:(NSNotification *)aNotification {
     NSTextView *textView = [aNotification object];
     
-    [self.codeController processSyntaxHighlightingInTextView:textView];
+    if ([[textView string] length] >= lastLength) {
+        [self.codeController processSyntaxHighlightingInTextView:textView];
+    }
     
     //If the length of the text is less than it was, we're deleting text; if we have a {{,
     //we're entering mathematical markup. If the undo manager is redoing, this wasn't a 

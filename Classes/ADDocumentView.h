@@ -23,6 +23,7 @@
 
 - (IBAction)toggleMonospaced:(id)sender;
 - (IBAction)enterMathMode:(id)sender;
+- (IBAction)runCode:(id)sender;
 - (void)addColumn;
 - (void)removeColumn;
 - (void)setData:(NSData *)data;

@@ -13,22 +13,39 @@
 
 - (id)init {
     if (self = [super init]) {
-        serviceConnection = xpc_connection_create("stuffediggy.hilite", dispatch_get_main_queue());
+        hiliteServiceConnection = xpc_connection_create("stuffediggy.hilite", dispatch_get_main_queue());
         
-        xpc_connection_set_event_handler(serviceConnection, ^(xpc_object_t event) {
+        xpc_connection_set_event_handler(hiliteServiceConnection, ^(xpc_object_t event) {
             xpc_type_t type = xpc_get_type(event);
             
             if (type == XPC_TYPE_ERROR) {
                 if (event == XPC_ERROR_CONNECTION_INTERRUPTED) {
-                    NSLog(@"XPC connection interrupted");
+                    NSLog(@"hilite XPC connection interrupted");
                 } else if (event == XPC_ERROR_CONNECTION_INVALID) {            
-                    NSLog(@"XPC connection invalid");
-                    xpc_release(serviceConnection);
-                    serviceConnection = nil;
+                    NSLog(@"hilite XPC connection invalid");
+                    xpc_release(hiliteServiceConnection);
+                    hiliteServiceConnection = nil;
                 }
             }
         });
-        xpc_connection_resume(serviceConnection);
+        xpc_connection_resume(hiliteServiceConnection);
+        
+        coderunnerServiceConnection = xpc_connection_create("stuffediggy.coderunner", dispatch_get_main_queue());
+        
+        xpc_connection_set_event_handler(coderunnerServiceConnection, ^(xpc_object_t event) {
+            xpc_type_t type = xpc_get_type(event);
+            
+            if (type == XPC_TYPE_ERROR) {
+                if (event == XPC_ERROR_CONNECTION_INTERRUPTED) {
+                    NSLog(@"coderunner XPC connection interrupted");
+                } else if (event == XPC_ERROR_CONNECTION_INVALID) {            
+                    NSLog(@"coderunner XPC connection invalid");
+                    xpc_release(coderunnerServiceConnection);
+                    coderunnerServiceConnection = nil;
+                }
+            }
+        });
+        xpc_connection_resume(coderunnerServiceConnection);
     }
     
     return self;
@@ -105,7 +122,7 @@
         xpc_object_t message = xpc_dictionary_create(NULL, NULL, 0);
         xpc_dictionary_set_string(message, "language", [lang cStringUsingEncoding:NSUTF8StringEncoding]);
         xpc_dictionary_set_string(message, "code", [[[[textView textStorage] string] substringWithRange:codeRange] cStringUsingEncoding:NSUTF8StringEncoding]);
-        xpc_connection_send_message_with_reply(serviceConnection, message, dispatch_get_main_queue(), ^ (xpc_object_t reply) {
+        xpc_connection_send_message_with_reply(hiliteServiceConnection, message, dispatch_get_main_queue(), ^ (xpc_object_t reply) {
             xpc_type_t type = xpc_get_type(reply);
             if (type == XPC_TYPE_ERROR) {
                 if (reply == XPC_ERROR_CONNECTION_INTERRUPTED) {
@@ -146,8 +163,47 @@
     
     //Apply the colors to the actual text in the text view
     for (NSDictionary *dict in colorRanges) {
-        [textView setTextColor:[dict objectForKey:@"color"] range:[[dict objectForKey:@"range"] rangeValue]];
+        NSRange temp = [[dict objectForKey:@"range"] rangeValue];
+        if (temp.location + temp.length <= [[textView string] length]) {
+            [textView setTextColor:[dict objectForKey:@"color"] range:[[dict objectForKey:@"range"] rangeValue]];
+        }
     }   
+}
+
+- (void)runCode:(NSString *)code inLanguage:(NSString *)language displayRect:(NSRect)rect inView:(NSView *)view {
+    NSPopover *popover = [[NSPopover alloc] init];
+    popover.behavior = NSPopoverBehaviorSemitransient;
+    
+    ADCodePopoverViewController *vc = [[ADCodePopoverViewController alloc] initWithNibName:@"ADCodePopoverViewController" bundle:[NSBundle mainBundle]];
+    popover.contentViewController = vc;
+    [popover showRelativeToRect:rect ofView:view preferredEdge:NSMinXEdge];
+    
+    //Create an XPC message to communicate with the coderunner service
+    xpc_object_t message = xpc_dictionary_create(NULL, NULL, 0);
+    xpc_dictionary_set_string(message, "language", [language cStringUsingEncoding:NSUTF8StringEncoding]);
+    xpc_dictionary_set_string(message, "code", [code cStringUsingEncoding:NSUTF8StringEncoding]);
+    xpc_connection_send_message_with_reply(coderunnerServiceConnection, message, dispatch_get_main_queue(), ^ (xpc_object_t reply) {
+        xpc_type_t type = xpc_get_type(reply);
+        if (type == XPC_TYPE_ERROR) {
+            if (reply == XPC_ERROR_CONNECTION_INTERRUPTED) {
+                NSLog(@"interrupted");
+            } else if (reply == XPC_ERROR_CONNECTION_INVALID) {            
+                NSLog(@"invalid");
+            }
+        } else if (type == XPC_TYPE_DICTIONARY) {
+            NSLog(@"lo, tis a dictionary");
+            NSString *output;
+            if (xpc_dictionary_get_string(reply, "programOutput") == NULL) {
+                NSLog(@"compiler");
+                output = [[NSString stringWithCString:xpc_dictionary_get_string(reply, "compilerOutput") encoding:NSUTF8StringEncoding] copy];
+            } else {
+                NSLog(@"program");
+                output = [[NSString stringWithCString:xpc_dictionary_get_string(reply, "programOutput") encoding:NSUTF8StringEncoding] copy];                
+            }
+            [vc appendStringToConsole:output];
+        }
+    });
+    xpc_release(message);
 }
 
 @end
