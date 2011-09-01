@@ -2,7 +2,6 @@ Rubber
 ======
 Notes for nerds
 ---
-* * *
 
 Rubber is a note taking app optimized for use with a combination of mathematical markup, code, and text. It aims to make taking notes in lectures for engineering courses markedly easier by adding assorted niceties and removing sources of note taking friction. Specifically, Rubber:
 
@@ -24,15 +23,12 @@ Additional planned features include:
 
 Building Rubber
 ---------------
-* * *
 Rubber is mostly self-contained, but the source-highlight library depends on the C++ Boost library. This is easily obtained with [Homebrew](https://github.com/mxcl/homebrew "Homebrew") by running `brew install boost`. After installing it, you should be able to open and build Rubber in Xcode without any problems.
 
 System Requirements
 -------------------
-* * *
 Rubber takes advantage of many Mac OS X Lion features, and consequently requires OS X 10.7 or newer to run.
 
 License
 -------
-* * *
 Rubber is made available under the terms of the BSD license, with the exception of the hilite XPC service. Due to its dependency on the source-highlight library, the hilite XPC service is licensed under the GPLv3.

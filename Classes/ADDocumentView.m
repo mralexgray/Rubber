@@ -264,15 +264,17 @@
 
 - (void)setData:(NSData *)newData
 {
-    NSAttributedString *newString = [NSKeyedUnarchiver unarchiveObjectWithData:newData];
+    NSDictionary *dict = [NSKeyedUnarchiver unarchiveObjectWithData:newData];
     [textStorage beginEditing];
-    [textStorage setAttributedString:newString];
+    [textStorage setAttributedString:[dict objectForKey:@"contents"]];
     [textStorage endEditing];
 }
 
 - (NSData *)currentData
 {
-    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:[textStorage attributedSubstringFromRange:NSMakeRange(0, [textStorage length])]];
+    NSImage *qlPreview = [[NSImage alloc] initWithData:[self dataWithPDFInsideRect:[self bounds]]];
+    NSDictionary *dataDict = [NSDictionary dictionaryWithObjectsAndKeys:qlPreview, @"qlPreview", [textStorage attributedSubstringFromRange:NSMakeRange(0, [textStorage length])], @"contents", nil];
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:dataDict];
     
     return data;
 }

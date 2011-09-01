@@ -16,6 +16,15 @@
 		933EF8B0125BEC2F00845394 /* ADTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 933EF8AF125BEC2F00845394 /* ADTextAttachment.m */; };
 		933EF8E5125C113000845394 /* ADTextMungingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933EF8E4125C113000845394 /* ADTextMungingController.m */; };
 		93466DA513F57A56008DEA3B /* ADTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93466DA413F57A56008DEA3B /* ADTextView.m */; };
+		9347F939140F14A800CC1AC3 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9347F938140F14A800CC1AC3 /* QuickLook.framework */; };
+		9347F93B140F14A800CC1AC3 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9347F93A140F14A800CC1AC3 /* ApplicationServices.framework */; };
+		9347F93D140F14A800CC1AC3 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9347F93C140F14A800CC1AC3 /* CoreServices.framework */; };
+		9347F93F140F14A800CC1AC3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9347F93E140F14A800CC1AC3 /* CoreFoundation.framework */; };
+		9347F945140F14A800CC1AC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9347F943140F14A800CC1AC3 /* InfoPlist.strings */; };
+		9347F947140F14A800CC1AC3 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 9347F946140F14A800CC1AC3 /* GenerateThumbnailForURL.c */; };
+		9347F949140F14A800CC1AC3 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 9347F948140F14A800CC1AC3 /* GeneratePreviewForURL.c */; };
+		9347F94B140F14A800CC1AC3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 9347F94A140F14A800CC1AC3 /* main.c */; };
+		9347F951140F1D6500CC1AC3 /* Rubber Quicklook Plugin.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9347F937140F14A800CC1AC3 /* Rubber Quicklook Plugin.qlgenerator */; };
 		934CFF8414055AE000C24AFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 934CFF8214055AE000C24AFF /* InfoPlist.strings */; };
 		934CFF8714055AE000C24AFF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 934CFF8614055AE000C24AFF /* main.c */; };
 		934CFF8C14055BB200C24AFF /* hilite.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 934CFF8B14055BB200C24AFF /* hilite.entitlements */; };
@@ -25,6 +34,7 @@
 		934CFF931405610200C24AFF /* libsource-highlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 938F2E7613FB3CA9000023AB /* libsource-highlight.a */; };
 		937A641E1256A2E900B0D4AC /* ADEquationRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 937A641D1256A2E900B0D4AC /* ADEquationRenderer.m */; };
 		937A64481256AA4E00B0D4AC /* ASCIIMathML.js in Resources */ = {isa = PBXBuildFile; fileRef = 937A641F1256A80A00B0D4AC /* ASCIIMathML.js */; };
+		937D6651140F313800BBDC6A /* ADTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 933EF8AF125BEC2F00845394 /* ADTextAttachment.m */; };
 		93A346C2140168C500159929 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A346C1140168C400159929 /* WebKit.framework */; };
 		93B3928913E75DD300FD29DD /* rubber.icns in Resources */ = {isa = PBXBuildFile; fileRef = 93B3928813E75DD300FD29DD /* rubber.icns */; };
 		93B7C8DC1404126B004D19C4 /* ADCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B7C8DB1404126B004D19C4 /* ADCodeController.m */; };
@@ -40,6 +50,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		9347F950140F1D5500CC1AC3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/QuickLook;
+			dstSubfolderSpec = 1;
+			files = (
+				9347F951140F1D6500CC1AC3 /* Rubber Quicklook Plugin.qlgenerator in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		934CFF9114055CDC00C24AFF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,6 +92,17 @@
 		933EF8E4125C113000845394 /* ADTextMungingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADTextMungingController.m; sourceTree = "<group>"; };
 		93466DA313F57A56008DEA3B /* ADTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADTextView.h; sourceTree = "<group>"; };
 		93466DA413F57A56008DEA3B /* ADTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADTextView.m; sourceTree = "<group>"; };
+		9347F937140F14A800CC1AC3 /* Rubber Quicklook Plugin.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rubber Quicklook Plugin.qlgenerator"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9347F938140F14A800CC1AC3 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		9347F93A140F14A800CC1AC3 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		9347F93C140F14A800CC1AC3 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		9347F93E140F14A800CC1AC3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		9347F942140F14A800CC1AC3 /* Rubber Quicklook Plugin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rubber Quicklook Plugin-Info.plist"; sourceTree = "<group>"; };
+		9347F944140F14A800CC1AC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9347F946140F14A800CC1AC3 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
+		9347F948140F14A800CC1AC3 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		9347F94A140F14A800CC1AC3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		9347F94C140F14A800CC1AC3 /* Rubber Quicklook Plugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rubber Quicklook Plugin-Prefix.pch"; sourceTree = "<group>"; };
 		934CFF7E14055AE000C24AFF /* stuffediggy.hilite.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stuffediggy.hilite.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
 		934CFF8114055AE000C24AFF /* hilite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hilite-Info.plist"; sourceTree = "<group>"; };
 		934CFF8314055AE000C24AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -113,6 +144,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9347F932140F14A800CC1AC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9347F939140F14A800CC1AC3 /* QuickLook.framework in Frameworks */,
+				9347F93B140F14A800CC1AC3 /* ApplicationServices.framework in Frameworks */,
+				9347F93D140F14A800CC1AC3 /* CoreServices.framework in Frameworks */,
+				9347F93F140F14A800CC1AC3 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		934CFF7B14055AE000C24AFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -150,6 +192,28 @@
 				9329E1411406787E00CB54EE /* coderunner-Info.plist */,
 				9329E1421406787E00CB54EE /* InfoPlist.strings */,
 				9329E1451406787E00CB54EE /* coderunner-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9347F940140F14A800CC1AC3 /* Quick Look Generator */ = {
+			isa = PBXGroup;
+			children = (
+				9347F946140F14A800CC1AC3 /* GenerateThumbnailForURL.c */,
+				9347F948140F14A800CC1AC3 /* GeneratePreviewForURL.c */,
+				9347F94A140F14A800CC1AC3 /* main.c */,
+				9347F941140F14A800CC1AC3 /* Supporting Files */,
+			);
+			name = "Quick Look Generator";
+			path = "Rubber Quicklook Plugin";
+			sourceTree = "<group>";
+		};
+		9347F941140F14A800CC1AC3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9347F942140F14A800CC1AC3 /* Rubber Quicklook Plugin-Info.plist */,
+				9347F943140F14A800CC1AC3 /* InfoPlist.strings */,
+				9347F94C140F14A800CC1AC3 /* Rubber Quicklook Plugin-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -196,6 +260,7 @@
 				93C1B8C21253B3FE00E437E0 /* Resources */,
 				934CFF7F14055AE000C24AFF /* hilite */,
 				9329E13F1406787E00CB54EE /* coderunner */,
+				9347F940140F14A800CC1AC3 /* Quick Look Generator */,
 				93C1B8C31253B3FE00E437E0 /* Frameworks */,
 				93C1B8C91253B3FE00E437E0 /* Products */,
 			);
@@ -256,6 +321,10 @@
 				93A346C1140168C400159929 /* WebKit.framework */,
 				93DB911412624FF100A1ECA0 /* QuartzCore.framework */,
 				93C1B8CB1253B3FE00E437E0 /* Cocoa.framework */,
+				9347F938140F14A800CC1AC3 /* QuickLook.framework */,
+				9347F93A140F14A800CC1AC3 /* ApplicationServices.framework */,
+				9347F93C140F14A800CC1AC3 /* CoreServices.framework */,
+				9347F93E140F14A800CC1AC3 /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -266,11 +335,22 @@
 				93C1B8C81253B3FE00E437E0 /* Rubber.app */,
 				934CFF7E14055AE000C24AFF /* stuffediggy.hilite.xpc */,
 				9329E13E1406787E00CB54EE /* stuffediggy.coderunner.xpc */,
+				9347F937140F14A800CC1AC3 /* Rubber Quicklook Plugin.qlgenerator */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9347F933140F14A800CC1AC3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		9329E13D1406787E00CB54EE /* coderunner */ = {
@@ -288,6 +368,25 @@
 			name = coderunner;
 			productName = coderunner;
 			productReference = 9329E13E1406787E00CB54EE /* stuffediggy.coderunner.xpc */;
+			productType = "com.apple.product-type.bundle";
+		};
+		9347F936140F14A800CC1AC3 /* Rubber Quicklook Plugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9347F94F140F14A800CC1AC3 /* Build configuration list for PBXNativeTarget "Rubber Quicklook Plugin" */;
+			buildPhases = (
+				9347F931140F14A800CC1AC3 /* Sources */,
+				9347F932140F14A800CC1AC3 /* Frameworks */,
+				9347F933140F14A800CC1AC3 /* Headers */,
+				9347F934140F14A800CC1AC3 /* Resources */,
+				9347F935140F14A800CC1AC3 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rubber Quicklook Plugin";
+			productName = "Rubber Quicklook Plugin";
+			productReference = 9347F937140F14A800CC1AC3 /* Rubber Quicklook Plugin.qlgenerator */;
 			productType = "com.apple.product-type.bundle";
 		};
 		934CFF7D14055AE000C24AFF /* hilite */ = {
@@ -315,6 +414,7 @@
 				93C1B8C51253B3FE00E437E0 /* Frameworks */,
 				93C1B8C61253B3FE00E437E0 /* Resources */,
 				934CFF9114055CDC00C24AFF /* CopyFiles */,
+				9347F950140F1D5500CC1AC3 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -348,6 +448,7 @@
 				93C1B8C71253B3FE00E437E0 /* Rubber */,
 				934CFF7D14055AE000C24AFF /* hilite */,
 				9329E13D1406787E00CB54EE /* coderunner */,
+				9347F936140F14A800CC1AC3 /* Rubber Quicklook Plugin */,
 			);
 		};
 /* End PBXProject section */
@@ -359,6 +460,14 @@
 			files = (
 				9329E1441406787E00CB54EE /* InfoPlist.strings in Resources */,
 				9329E14F1406796400CB54EE /* coderunner.entitlements in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9347F934140F14A800CC1AC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9347F945140F14A800CC1AC3 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,12 +498,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXRezBuildPhase section */
+		9347F935140F14A800CC1AC3 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9329E13A1406787E00CB54EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9329E1471406787E00CB54EE /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9347F931140F14A800CC1AC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9347F947140F14A800CC1AC3 /* GenerateThumbnailForURL.c in Sources */,
+				9347F949140F14A800CC1AC3 /* GeneratePreviewForURL.c in Sources */,
+				9347F94B140F14A800CC1AC3 /* main.c in Sources */,
+				937D6651140F313800BBDC6A /* ADTextAttachment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +559,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				9329E1431406787E00CB54EE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9347F943140F14A800CC1AC3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9347F944140F14A800CC1AC3 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -532,6 +670,63 @@
 				PRODUCT_NAME = "stuffediggy.$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = xpc;
+			};
+			name = Release;
+		};
+		9347F94D140F14A800CC1AC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rubber Quicklook Plugin/Rubber Quicklook Plugin-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "Rubber Quicklook Plugin/Rubber Quicklook Plugin-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+					"-lobjc",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		9347F94E140F14A800CC1AC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rubber Quicklook Plugin/Rubber Quicklook Plugin-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "Rubber Quicklook Plugin/Rubber Quicklook Plugin-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+					"-lobjc",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
 			};
 			name = Release;
 		};
@@ -721,6 +916,15 @@
 			buildConfigurations = (
 				9329E1481406787E00CB54EE /* Debug */,
 				9329E1491406787E00CB54EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9347F94F140F14A800CC1AC3 /* Build configuration list for PBXNativeTarget "Rubber Quicklook Plugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9347F94D140F14A800CC1AC3 /* Debug */,
+				9347F94E140F14A800CC1AC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

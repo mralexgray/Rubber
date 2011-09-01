@@ -53,9 +53,30 @@
 	<string>NSApplication</string>
 	<key>NSServices</key>
 	<array/>
-	<key>UTExportedTypeDeclarations</key>
-	<array/>
 	<key>UTImportedTypeDeclarations</key>
 	<array/>
+    <key>UTExportedTypeDeclarations</key>
+    <array>
+        <dict>
+            <key>UTTypeIdentifier</key>
+            <string>com.stuffediggy.rubber</string>
+            <key>UTTypeDescription</key>
+            <string>Rubber document</string>
+            <key>UTTypeConformsTo</key>
+            <array>
+                <string>public.text</string>
+                <string>public.data</string>
+            </array>
+            <key>UTTypeTagSpecification</key>
+            <dict>
+                <key>com.apple.ostype</key>
+                <string>RBBR</string>
+                <key>public.filename-extension</key>
+                <array>
+                    <string>rubber</string>
+                </array>
+            </dict>
+        </dict>
+    </array>
 </dict>
 </plist>
