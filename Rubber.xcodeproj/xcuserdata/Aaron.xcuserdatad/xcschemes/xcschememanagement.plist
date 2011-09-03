@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>Rubber Spotlight Importer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>Rubber.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -38,6 +43,11 @@
 			<true/>
 		</dict>
 		<key>934CFF7D14055AE000C24AFF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>937D6655140F393D00BBDC6A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

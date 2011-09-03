@@ -1,0 +1,6 @@
+//
+// Prefix header for all source files of the 'Rubber Spotlight Importer' target in the 'Rubber Spotlight Importer' project
+//
+
+#ifdef __OBJC__
+#endif

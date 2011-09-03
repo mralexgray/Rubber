@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9309755A141270FC001159C4 /* Rubber Spotlight Importer.mdimporter in CopyFiles */ = {isa = PBXBuildFile; fileRef = 937D6656140F393D00BBDC6A /* Rubber Spotlight Importer.mdimporter */; };
+		9309755C141273B3001159C4 /* schema.xml in Resources */ = {isa = PBXBuildFile; fileRef = 9309755B141273B3001159C4 /* schema.xml */; };
 		93152A411406B1AD003E18DA /* ADCodePopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93152A3F1406B1AD003E18DA /* ADCodePopoverViewController.m */; };
 		93152A421406B1AD003E18DA /* ADCodePopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93152A401406B1AD003E18DA /* ADCodePopoverViewController.xib */; };
 		9329E1441406787E00CB54EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9329E1421406787E00CB54EE /* InfoPlist.strings */; };
@@ -35,7 +37,15 @@
 		937A641E1256A2E900B0D4AC /* ADEquationRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 937A641D1256A2E900B0D4AC /* ADEquationRenderer.m */; };
 		937A64481256AA4E00B0D4AC /* ASCIIMathML.js in Resources */ = {isa = PBXBuildFile; fileRef = 937A641F1256A80A00B0D4AC /* ASCIIMathML.js */; };
 		937D6651140F313800BBDC6A /* ADTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 933EF8AF125BEC2F00845394 /* ADTextAttachment.m */; };
+		937D6657140F393D00BBDC6A /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9347F93C140F14A800CC1AC3 /* CoreServices.framework */; };
+		937D6658140F393D00BBDC6A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9347F93E140F14A800CC1AC3 /* CoreFoundation.framework */; };
+		937D665C140F393D00BBDC6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937D665B140F393D00BBDC6A /* Foundation.framework */; };
+		937D6662140F393D00BBDC6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 937D6660140F393D00BBDC6A /* InfoPlist.strings */; };
+		937D6664140F393D00BBDC6A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 937D6663140F393D00BBDC6A /* main.c */; };
+		937D6666140F393D00BBDC6A /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 937D6665140F393D00BBDC6A /* GetMetadataForFile.m */; };
 		93A346C2140168C500159929 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A346C1140168C400159929 /* WebKit.framework */; };
+		93ADF7BC1412AC6800D4B5DD /* ADTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 933EF8AF125BEC2F00845394 /* ADTextAttachment.m */; };
+		93ADF7C11412AD6400D4B5DD /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ADF7BF1412AD5900D4B5DD /* AppKit.framework */; };
 		93B3928913E75DD300FD29DD /* rubber.icns in Resources */ = {isa = PBXBuildFile; fileRef = 93B3928813E75DD300FD29DD /* rubber.icns */; };
 		93B7C8DC1404126B004D19C4 /* ADCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B7C8DB1404126B004D19C4 /* ADCodeController.m */; };
 		93C1B8CC1253B3FE00E437E0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C1B8CB1253B3FE00E437E0 /* Cocoa.framework */; };
@@ -50,6 +60,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		93097559141270E7001159C4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/Spotlight;
+			dstSubfolderSpec = 1;
+			files = (
+				9309755A141270FC001159C4 /* Rubber Spotlight Importer.mdimporter in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9347F950140F1D5500CC1AC3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -74,6 +94,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9309755B141273B3001159C4 /* schema.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = schema.xml; sourceTree = "<group>"; };
 		93152A3E1406B1AD003E18DA /* ADCodePopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCodePopoverViewController.h; sourceTree = "<group>"; };
 		93152A3F1406B1AD003E18DA /* ADCodePopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADCodePopoverViewController.m; sourceTree = "<group>"; };
 		93152A401406B1AD003E18DA /* ADCodePopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ADCodePopoverViewController.xib; path = Classes/ADCodePopoverViewController.xib; sourceTree = "<group>"; };
@@ -114,9 +135,18 @@
 		937A641C1256A2E900B0D4AC /* ADEquationRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADEquationRenderer.h; sourceTree = "<group>"; };
 		937A641D1256A2E900B0D4AC /* ADEquationRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADEquationRenderer.m; sourceTree = "<group>"; };
 		937A641F1256A80A00B0D4AC /* ASCIIMathML.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ASCIIMathML.js; sourceTree = "<group>"; };
+		937D6656140F393D00BBDC6A /* Rubber Spotlight Importer.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rubber Spotlight Importer.mdimporter"; sourceTree = BUILT_PRODUCTS_DIR; };
+		937D6659140F393D00BBDC6A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		937D665B140F393D00BBDC6A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		937D665F140F393D00BBDC6A /* Rubber Spotlight Importer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rubber Spotlight Importer-Info.plist"; sourceTree = "<group>"; };
+		937D6661140F393D00BBDC6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		937D6663140F393D00BBDC6A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		937D6665140F393D00BBDC6A /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
+		937D666B140F393D00BBDC6A /* Rubber Spotlight Importer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rubber Spotlight Importer-Prefix.pch"; sourceTree = "<group>"; };
 		938F2E7313FB2A35000023AB /* Rubber.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Rubber.entitlements; sourceTree = "<group>"; };
 		938F2E7613FB3CA9000023AB /* libsource-highlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libsource-highlight.a"; sourceTree = "<group>"; };
 		93A346C1140168C400159929 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		93ADF7BF1412AD5900D4B5DD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		93B3928813E75DD300FD29DD /* rubber.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = rubber.icns; sourceTree = "<group>"; };
 		93B7C8DA1404126B004D19C4 /* ADCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCodeController.h; sourceTree = "<group>"; };
 		93B7C8DB1404126B004D19C4 /* ADCodeController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = ADCodeController.m; sourceTree = "<group>"; };
@@ -160,6 +190,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				934CFF931405610200C24AFF /* libsource-highlight.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		937D6653140F393D00BBDC6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				937D6657140F393D00BBDC6A /* CoreServices.framework in Frameworks */,
+				937D6658140F393D00BBDC6A /* CoreFoundation.framework in Frameworks */,
+				93ADF7C11412AD6400D4B5DD /* AppKit.framework in Frameworks */,
+				937D665C140F393D00BBDC6A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +282,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		937D665D140F393D00BBDC6A /* Spotlight Importer */ = {
+			isa = PBXGroup;
+			children = (
+				937D6665140F393D00BBDC6A /* GetMetadataForFile.m */,
+				937D665E140F393D00BBDC6A /* Supporting Files */,
+			);
+			name = "Spotlight Importer";
+			path = "Rubber Spotlight Importer";
+			sourceTree = "<group>";
+		};
+		937D665E140F393D00BBDC6A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				937D665F140F393D00BBDC6A /* Rubber Spotlight Importer-Info.plist */,
+				937D6660140F393D00BBDC6A /* InfoPlist.strings */,
+				937D6663140F393D00BBDC6A /* main.c */,
+				937D666B140F393D00BBDC6A /* Rubber Spotlight Importer-Prefix.pch */,
+				9309755B141273B3001159C4 /* schema.xml */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		93A346C314018A9900159929 /* libsource-highlight Headers */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +324,7 @@
 				934CFF7F14055AE000C24AFF /* hilite */,
 				9329E13F1406787E00CB54EE /* coderunner */,
 				9347F940140F14A800CC1AC3 /* Quick Look Generator */,
+				937D665D140F393D00BBDC6A /* Spotlight Importer */,
 				93C1B8C31253B3FE00E437E0 /* Frameworks */,
 				93C1B8C91253B3FE00E437E0 /* Products */,
 			);
@@ -318,6 +382,7 @@
 			isa = PBXGroup;
 			children = (
 				938F2E7613FB3CA9000023AB /* libsource-highlight.a */,
+				93ADF7BF1412AD5900D4B5DD /* AppKit.framework */,
 				93A346C1140168C400159929 /* WebKit.framework */,
 				93DB911412624FF100A1ECA0 /* QuartzCore.framework */,
 				93C1B8CB1253B3FE00E437E0 /* Cocoa.framework */,
@@ -325,6 +390,8 @@
 				9347F93A140F14A800CC1AC3 /* ApplicationServices.framework */,
 				9347F93C140F14A800CC1AC3 /* CoreServices.framework */,
 				9347F93E140F14A800CC1AC3 /* CoreFoundation.framework */,
+				937D6659140F393D00BBDC6A /* CoreData.framework */,
+				937D665B140F393D00BBDC6A /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -336,6 +403,7 @@
 				934CFF7E14055AE000C24AFF /* stuffediggy.hilite.xpc */,
 				9329E13E1406787E00CB54EE /* stuffediggy.coderunner.xpc */,
 				9347F937140F14A800CC1AC3 /* Rubber Quicklook Plugin.qlgenerator */,
+				937D6656140F393D00BBDC6A /* Rubber Spotlight Importer.mdimporter */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -406,6 +474,23 @@
 			productReference = 934CFF7E14055AE000C24AFF /* stuffediggy.hilite.xpc */;
 			productType = "com.apple.product-type.bundle";
 		};
+		937D6655140F393D00BBDC6A /* Rubber Spotlight Importer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 937D666C140F393D00BBDC6A /* Build configuration list for PBXNativeTarget "Rubber Spotlight Importer" */;
+			buildPhases = (
+				937D6652140F393D00BBDC6A /* Sources */,
+				937D6653140F393D00BBDC6A /* Frameworks */,
+				937D6654140F393D00BBDC6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rubber Spotlight Importer";
+			productName = "Rubber Spotlight Importer";
+			productReference = 937D6656140F393D00BBDC6A /* Rubber Spotlight Importer.mdimporter */;
+			productType = "com.apple.product-type.bundle";
+		};
 		93C1B8C71253B3FE00E437E0 /* Rubber */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93C1B8E21253B3FE00E437E0 /* Build configuration list for PBXNativeTarget "Rubber" */;
@@ -415,6 +500,7 @@
 				93C1B8C61253B3FE00E437E0 /* Resources */,
 				934CFF9114055CDC00C24AFF /* CopyFiles */,
 				9347F950140F1D5500CC1AC3 /* CopyFiles */,
+				93097559141270E7001159C4 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -449,6 +535,7 @@
 				934CFF7D14055AE000C24AFF /* hilite */,
 				9329E13D1406787E00CB54EE /* coderunner */,
 				9347F936140F14A800CC1AC3 /* Rubber Quicklook Plugin */,
+				937D6655140F393D00BBDC6A /* Rubber Spotlight Importer */,
 			);
 		};
 /* End PBXProject section */
@@ -479,6 +566,15 @@
 				934CFF8C14055BB200C24AFF /* hilite.entitlements in Resources */,
 				934CFF8E14055C6100C24AFF /* style.css in Resources */,
 				934CFF9014055C6E00C24AFF /* data in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		937D6654140F393D00BBDC6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				937D6662140F393D00BBDC6A /* InfoPlist.strings in Resources */,
+				9309755C141273B3001159C4 /* schema.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +632,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		937D6652140F393D00BBDC6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				937D6664140F393D00BBDC6A /* main.c in Sources */,
+				937D6666140F393D00BBDC6A /* GetMetadataForFile.m in Sources */,
+				93ADF7BC1412AC6800D4B5DD /* ADTextAttachment.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		93C1B8C41253B3FE00E437E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -575,6 +681,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				934CFF8314055AE000C24AFF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		937D6660140F393D00BBDC6A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				937D6661140F393D00BBDC6A /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -801,6 +915,53 @@
 			};
 			name = Release;
 		};
+		937D666D140F393D00BBDC6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rubber Spotlight Importer/Rubber Spotlight Importer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "Rubber Spotlight Importer/Rubber Spotlight Importer-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Debug;
+		};
+		937D666E140F393D00BBDC6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rubber Spotlight Importer/Rubber Spotlight Importer-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "Rubber Spotlight Importer/Rubber Spotlight Importer-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Release;
+		};
 		93C1B8E01253B3FE00E437E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -934,6 +1095,15 @@
 			buildConfigurations = (
 				934CFF8814055AE000C24AFF /* Debug */,
 				934CFF8914055AE000C24AFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		937D666C140F393D00BBDC6A /* Build configuration list for PBXNativeTarget "Rubber Spotlight Importer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				937D666D140F393D00BBDC6A /* Debug */,
+				937D666E140F393D00BBDC6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

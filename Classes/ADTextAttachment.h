@@ -6,7 +6,8 @@
 //  Copyright (c) 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <AppKit/AppKit.h>
+//#import <Cocoa/Cocoa.h>
 
 
 @interface ADTextAttachment : NSTextAttachment {
