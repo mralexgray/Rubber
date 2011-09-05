@@ -245,6 +245,20 @@
     [codeController runCode:[[textView string] substringWithRange:codeRange] inLanguage:language displayRect:codeRect inView:textView];
 }
 
+- (IBAction)setLanguage:(id)sender {
+    ADTextView *textView = [self currentTextView];
+    if ([[textView typingAttributes] valueForKey:@"ADCodeAttribute"] == nil) {
+        NSBeep();
+        return;
+    }
+    
+    NSRange codeRange;
+    [[textView textStorage] attribute:@"ADCodeAttribute" atIndex:[textView selectedRange].location longestEffectiveRange:&codeRange inRange:NSMakeRange(0, [[textView string] length])];
+    NSString *language = [sender representedObject];
+    [[textView textStorage] addAttribute:@"ADCodeAttribute" value:language range:codeRange];
+    [codeController processSyntaxHighlightingInTextView:textView];
+}
+
 - (ADTextView *)currentTextView
 {
     NSArray *textContainers = [layoutManager textContainers];
