@@ -19,10 +19,11 @@
         [self.codeController processSyntaxHighlightingInTextView:textView];
     }
     
-    //If the length of the text is less than it was, we're deleting text; if we have a {{,
-    //we're entering mathematical markup. If the undo manager is redoing, this wasn't a 
+    //If the length of the text is less than it was, we're deleting text;
+    //If the undo manager is redoing, this wasn't a 
     //user-initiated change. In all of these cases, we don't want to suggest completions.
-    if ([[textView string] length] <= lastLength || 
+    if ([[textView string] length] <= lastLength ||
+        [[[textView string] substringWithRange:NSMakeRange(MAX([textView selectedRange].location - 1, 0), 1)] isEqualToString:@"?"] ||
         [[textView textStorage] attribute:@"ADCodeAttribute" atIndex:MAX([textView selectedRange].location - 1, 0) effectiveRange:nil] != nil ||
         [[textView textStorage] attribute:@"ADMathAttribute" atIndex:MAX([textView selectedRange].location - 1, 0) effectiveRange:nil] != nil ||
         [[textView undoManager] isRedoing]) {
