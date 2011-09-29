@@ -20,7 +20,10 @@
 
 - (void)awakeFromNib {
     [textView setFont:[NSFont fontWithName:@"Menlo" size:12.0]];
+    [textView setInsertionPointColor:[NSColor whiteColor]];
     [textView setTextColor:[NSColor whiteColor]];
+    [textView setEditable:NO];
+    [[textView enclosingScrollView] setBackgroundColor:[NSColor colorWithDeviceRed:57/255.0 green:57/255.0 blue:57/255.0 alpha:1.0]];
     [textView setBackgroundColor:[NSColor colorWithDeviceRed:57/255.0 green:57/255.0 blue:57/255.0 alpha:1.0]];
 }
 
