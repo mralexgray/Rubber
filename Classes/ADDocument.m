@@ -74,7 +74,6 @@
     
     NSRect pageBounds = [printInfo imageablePageBounds];
     NSInteger columnWidth = ((pageBounds.size.width - 35) / 3);
-    printView.printPending = YES;
     [printView setColumnSize:NSMakeSize(columnWidth, pageBounds.size.height)];
     [printView setData:[documentView currentData]];
     [printView performSelector:@selector(print) withObject:nil afterDelay:0.5];
