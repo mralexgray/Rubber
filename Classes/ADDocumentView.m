@@ -10,8 +10,11 @@
 
 @implementation ADDocumentView
 
+@synthesize printPending;
+
 - (id)initWithFrame:(NSRect)frame {
     if ((self = [super initWithFrame:frame])) {
+        [self performCommonInitialization];
     }
     
     return self;
@@ -33,39 +36,44 @@
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
     if (self = [super initWithCoder:aDecoder]) {
-        mungingController = [[ADTextMungingController alloc] init];
-        codeController = [[ADCodeController alloc] init];
-        mungingController.codeController = codeController;
-        
-        textStorage = [[NSTextStorage alloc] init];
-        [textStorage setDelegate:self];
-        
-        layoutManager = [[NSLayoutManager alloc] init];
-        [layoutManager setDelegate:self];
-        [textStorage addLayoutManager:layoutManager];
-        
-        NSTextContainer *textContainer = [[NSTextContainer alloc] initWithContainerSize:NSMakeSize(350, [self frame].size.height - 40)];
-        [layoutManager addTextContainer:textContainer];
-        
-        ADTextView *textView = [[ADTextView alloc] initWithFrame:NSMakeRect(25, 20, 350, [self frame].size.height - 40) 
-                                                   textContainer:textContainer];
-        [textView setDelegate:mungingController];
-        [textView setAllowsUndo:YES];
-        [textView setImportsGraphics:YES];
-        [textView setTypingAttributes:[NSDictionary dictionaryWithObject:[NSFont fontWithName:@"Georgia" size:13.0] 
-                                                                  forKey:NSFontAttributeName]];
-        [textView.textStorage setFont:[NSFont fontWithName:@"Georgia" size:13.0]];
-        [textView setFont:[NSFont fontWithName:@"Georgia" size:13.0]];
-        [textView setUsesFindBar:YES];
-        [textView setIncrementalSearchingEnabled:YES];
-        [textView setAutoresizingMask:NSViewHeightSizable];
-        
-        
-        [self addSubview:textView];
-        
-        columns = 1;
+        [self performCommonInitialization];
     }
     return self;
+}
+
+- (void)performCommonInitialization {
+    columnSize = NSMakeSize(350, [self frame].size.height);
+    mungingController = [[ADTextMungingController alloc] init];
+    codeController = [[ADCodeController alloc] init];
+    mungingController.codeController = codeController;
+    
+    textStorage = [[NSTextStorage alloc] init];
+    [textStorage setDelegate:self];
+    
+    layoutManager = [[NSLayoutManager alloc] init];
+    [layoutManager setDelegate:self];
+    [textStorage addLayoutManager:layoutManager];
+    
+    NSTextContainer *textContainer = [[NSTextContainer alloc] initWithContainerSize:NSMakeSize(columnSize.width, columnSize.height)];
+    [layoutManager addTextContainer:textContainer];
+    
+    ADTextView *textView = [[ADTextView alloc] initWithFrame:NSMakeRect(25, 20, columnSize.width, columnSize.height) 
+                                               textContainer:textContainer];
+    [textView setDelegate:mungingController];
+    [textView setAllowsUndo:YES];
+    [textView setImportsGraphics:YES];
+    [textView setTypingAttributes:[NSDictionary dictionaryWithObject:[NSFont fontWithName:@"Georgia" size:13.0] 
+                                                              forKey:NSFontAttributeName]];
+    [textView.textStorage setFont:[NSFont fontWithName:@"Georgia" size:13.0]];
+    [textView setFont:[NSFont fontWithName:@"Georgia" size:13.0]];
+    [textView setUsesFindBar:YES];
+    [textView setIncrementalSearchingEnabled:YES];
+    [textView setAutoresizingMask:NSViewHeightSizable];
+    
+    
+    [self addSubview:textView];
+    
+    columns = 1;
 }
 
 - (void)drawRect:(NSRect)dirtyRect {
@@ -76,7 +84,7 @@
 - (void)setFrame:(NSRect)newFrame
 {
     NSInteger width = 0;
-    width = (columns * 370) + 30;
+    width = (columns * (columnSize.width + 20)) + 30;
     [super setFrame:NSMakeRect(newFrame.origin.x, newFrame.origin.y, width, newFrame.size.height)];
     
     NSArray *textContainers = [layoutManager textContainers];
@@ -84,7 +92,8 @@
     for (int i = 0; i < [textContainers count]; i++)
     {
         NSTextContainer *container = [textContainers objectAtIndex:i];
-        [container setContainerSize:NSMakeSize(350, [[self enclosingScrollView] documentVisibleRect].size.height - 40)];
+        [container setContainerSize:NSMakeSize(columnSize.width, [self frame].size.height - 40)];
+        [[container textView] setFrame:NSMakeRect(i * columnSize.width + (i + 1) * 20, 20, columnSize.width, [self frame].size.height - 40)];
     }
     
     [self setNeedsDisplay:YES];
@@ -92,6 +101,7 @@
 
 - (void)layoutManager:(NSLayoutManager *)layout didCompleteLayoutForTextContainer:(NSTextContainer *)textContainer atEnd:(BOOL)layoutFinishedFlag 
 {   
+    [printTimer invalidate];
 	NSArray *containers = [layout textContainers];
 	if (!layoutFinishedFlag || (textContainer == nil)) {
 		// Either layout is not finished or it is but there are glyphs laid nowhere.
@@ -115,6 +125,29 @@
     }
 }
 
+- (void)print {
+   // if (printPending) {
+        NSPrintInfo *printInfo = [NSPrintInfo sharedPrintInfo];
+        [printInfo setHorizontalPagination:NSAutoPagination];
+        [printInfo setVerticalPagination:NSFitPagination];
+        [printInfo setOrientation:NSLandscapeOrientation];
+        [printInfo setTopMargin:36.0];
+        [printInfo setBottomMargin:36.0];
+        [printInfo setLeftMargin:36.0];
+        [printInfo setRightMargin:36.0];
+        
+        NSPrintOperation *printOp = [NSPrintOperation printOperationWithView:self];
+        [printOp setPrintInfo:printInfo];
+        [printOp runOperation];
+        printPending = NO;
+   // }
+}
+
+- (void)setColumnSize:(NSSize)newColumnSize {
+    columnSize = newColumnSize;
+    [self setFrame:NSMakeRect(0, 0, 0, newColumnSize.height)];
+}
+
 - (void)addColumn
 {
     NSInteger cols = [[layoutManager textContainers] count];
@@ -122,9 +155,9 @@
     if (cols == 0)
         cols = 1;
     
-    NSTextContainer *textContainer = [[NSTextContainer alloc] initWithContainerSize:NSMakeSize(350, [self frame].size.height - 40)];
+    NSTextContainer *textContainer = [[NSTextContainer alloc] initWithContainerSize:NSMakeSize(columnSize.width, [self frame].size.height - 40)];
     [layoutManager addTextContainer:textContainer];
-    ADTextView *textView = [[ADTextView alloc] initWithFrame:NSMakeRect(cols * 350 + (cols + 1) * 20, 20, 350, [self frame].size.height - 40) 
+    ADTextView *textView = [[ADTextView alloc] initWithFrame:NSMakeRect(cols * columnSize.width + (cols + 1) * 20, 20, columnSize.width, [self frame].size.height - 40) 
                                                textContainer:textContainer];
     
     [textView setDelegate:mungingController];
@@ -282,6 +315,7 @@
     [textStorage beginEditing];
     [textStorage setAttributedString:[dict objectForKey:@"contents"]];
     [textStorage endEditing];
+    NSLog(@"DATA");
 }
 
 - (NSData *)currentData

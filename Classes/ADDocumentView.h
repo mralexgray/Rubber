@@ -17,14 +17,21 @@
     NSTextStorage *textStorage;
     NSLayoutManager *layoutManager;
     NSInteger columns;
+    NSSize columnSize;
+    NSTimer *printTimer;
     
     int layoutCount;
+    BOOL printPending;
 }
+
+@property (assign) BOOL printPending;
 
 - (IBAction)toggleMonospaced:(id)sender;
 - (IBAction)enterMathMode:(id)sender;
 - (IBAction)runCode:(id)sender;
 - (IBAction)setLanguage:(id)sender;
+- (void)performCommonInitialization;
+- (void)setColumnSize:(NSSize)newColumnSize;
 - (void)addColumn;
 - (void)removeColumn;
 - (void)setData:(NSData *)data;

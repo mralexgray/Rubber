@@ -63,4 +63,21 @@
     [documentView didEnterFullScreen];
 }
 
+- (void)printShowingPrintPanel:(BOOL)flag {
+    ADDocumentView *printView = [[ADDocumentView alloc] initWithFrame:[documentView frame]];
+    NSPrintInfo *printInfo = [NSPrintInfo sharedPrintInfo];
+    [printInfo setOrientation:NSLandscapeOrientation];
+    [printInfo setTopMargin:36.0];
+    [printInfo setBottomMargin:36.0];
+    [printInfo setLeftMargin:36.0];
+    [printInfo setRightMargin:36.0];
+    
+    NSRect pageBounds = [printInfo imageablePageBounds];
+    NSInteger columnWidth = ((pageBounds.size.width - 35) / 3);
+    printView.printPending = YES;
+    [printView setColumnSize:NSMakeSize(columnWidth, pageBounds.size.height)];
+    [printView setData:[documentView currentData]];
+    [printView performSelector:@selector(print) withObject:nil afterDelay:0.5];
+}
+
 @end
