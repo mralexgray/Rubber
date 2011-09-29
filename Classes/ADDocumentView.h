@@ -19,12 +19,7 @@
     NSInteger columns;
     NSSize columnSize;
     NSTimer *printTimer;
-    
-    int layoutCount;
-    BOOL printPending;
 }
-
-@property (assign) BOOL printPending;
 
 - (IBAction)toggleMonospaced:(id)sender;
 - (IBAction)enterMathMode:(id)sender;

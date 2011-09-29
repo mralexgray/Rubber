@@ -10,8 +10,6 @@
 
 @implementation ADDocumentView
 
-@synthesize printPending;
-
 - (id)initWithFrame:(NSRect)frame {
     if ((self = [super initWithFrame:frame])) {
         [self performCommonInitialization];
@@ -126,21 +124,18 @@
 }
 
 - (void)print {
-   // if (printPending) {
-        NSPrintInfo *printInfo = [NSPrintInfo sharedPrintInfo];
-        [printInfo setHorizontalPagination:NSAutoPagination];
-        [printInfo setVerticalPagination:NSFitPagination];
-        [printInfo setOrientation:NSLandscapeOrientation];
-        [printInfo setTopMargin:36.0];
-        [printInfo setBottomMargin:36.0];
-        [printInfo setLeftMargin:36.0];
-        [printInfo setRightMargin:36.0];
-        
-        NSPrintOperation *printOp = [NSPrintOperation printOperationWithView:self];
-        [printOp setPrintInfo:printInfo];
-        [printOp runOperation];
-        printPending = NO;
-   // }
+    NSPrintInfo *printInfo = [NSPrintInfo sharedPrintInfo];
+    [printInfo setHorizontalPagination:NSAutoPagination];
+    [printInfo setVerticalPagination:NSFitPagination];
+    [printInfo setOrientation:NSLandscapeOrientation];
+    [printInfo setTopMargin:36.0];
+    [printInfo setBottomMargin:36.0];
+    [printInfo setLeftMargin:36.0];
+    [printInfo setRightMargin:36.0];
+    
+    NSPrintOperation *printOp = [NSPrintOperation printOperationWithView:self];
+    [printOp setPrintInfo:printInfo];
+    [printOp runOperation];
 }
 
 - (void)setColumnSize:(NSSize)newColumnSize {
@@ -315,7 +310,6 @@
     [textStorage beginEditing];
     [textStorage setAttributedString:[dict objectForKey:@"contents"]];
     [textStorage endEditing];
-    NSLog(@"DATA");
 }
 
 - (NSData *)currentData
