@@ -57,12 +57,13 @@
 		93C1B8DF1253B3FE00E437E0 /* ADDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C1B8DD1253B3FE00E437E0 /* ADDocument.xib */; };
 		93C1B8EC1253B50200E437E0 /* ADDocumentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C1B8EB1253B50200E437E0 /* ADDocumentView.m */; };
 		93DB911512624FF100A1ECA0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93DB911412624FF100A1ECA0 /* QuartzCore.framework */; };
+		93E71EFB1435120B0013D3B4 /* DocumentIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 93E71EFA1435120B0013D3B4 /* DocumentIcon.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		93097559141270E7001159C4 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = Contents/Library/Spotlight;
 			dstSubfolderSpec = 1;
 			files = (
@@ -72,7 +73,7 @@
 		};
 		9347F950140F1D5500CC1AC3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = Contents/Library/QuickLook;
 			dstSubfolderSpec = 1;
 			files = (
@@ -82,7 +83,7 @@
 		};
 		934CFF9114055CDC00C24AFF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = Contents/XPCServices;
 			dstSubfolderSpec = 1;
 			files = (
@@ -164,6 +165,7 @@
 		93C1B8EA1253B50200E437E0 /* ADDocumentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADDocumentView.h; sourceTree = "<group>"; };
 		93C1B8EB1253B50200E437E0 /* ADDocumentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADDocumentView.m; sourceTree = "<group>"; };
 		93DB911412624FF100A1ECA0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		93E71EFA1435120B0013D3B4 /* DocumentIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = DocumentIcon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -365,6 +367,7 @@
 		93C1B8C21253B3FE00E437E0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				93E71EFA1435120B0013D3B4 /* DocumentIcon.icns */,
 				93152A401406B1AD003E18DA /* ADCodePopoverViewController.xib */,
 				938F2E7313FB2A35000023AB /* Rubber.entitlements */,
 				93B3928813E75DD300FD29DD /* rubber.icns */,
@@ -589,6 +592,7 @@
 				93C1B8DF1253B3FE00E437E0 /* ADDocument.xib in Resources */,
 				93B3928913E75DD300FD29DD /* rubber.icns in Resources */,
 				93152A421406B1AD003E18DA /* ADCodePopoverViewController.xib in Resources */,
+				93E71EFB1435120B0013D3B4 /* DocumentIcon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
