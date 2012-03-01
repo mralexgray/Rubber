@@ -43,6 +43,7 @@
 		937D6662140F393D00BBDC6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 937D6660140F393D00BBDC6A /* InfoPlist.strings */; };
 		937D6664140F393D00BBDC6A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 937D6663140F393D00BBDC6A /* main.c */; };
 		937D6666140F393D00BBDC6A /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 937D6665140F393D00BBDC6A /* GetMetadataForFile.m */; };
+		9380C4DC14FF12D5005E8D55 /* libboost_regex-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9380C4DB14FF12D5005E8D55 /* libboost_regex-mt.a */; };
 		93A346C2140168C500159929 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A346C1140168C400159929 /* WebKit.framework */; };
 		93ADF7BC1412AC6800D4B5DD /* ADTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 933EF8AF125BEC2F00845394 /* ADTextAttachment.m */; };
 		93ADF7C11412AD6400D4B5DD /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ADF7BF1412AD5900D4B5DD /* AppKit.framework */; };
@@ -144,6 +145,7 @@
 		937D6663140F393D00BBDC6A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		937D6665140F393D00BBDC6A /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
 		937D666B140F393D00BBDC6A /* Rubber Spotlight Importer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rubber Spotlight Importer-Prefix.pch"; sourceTree = "<group>"; };
+		9380C4DB14FF12D5005E8D55 /* libboost_regex-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libboost_regex-mt.a"; sourceTree = "<group>"; };
 		938F2E7313FB2A35000023AB /* Rubber.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Rubber.entitlements; sourceTree = "<group>"; };
 		938F2E7613FB3CA9000023AB /* libsource-highlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libsource-highlight.a"; sourceTree = "<group>"; };
 		93A346C1140168C400159929 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -192,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				934CFF931405610200C24AFF /* libsource-highlight.a in Frameworks */,
+				9380C4DC14FF12D5005E8D55 /* libboost_regex-mt.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +387,7 @@
 		93C1B8C31253B3FE00E437E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9380C4DB14FF12D5005E8D55 /* libboost_regex-mt.a */,
 				938F2E7613FB3CA9000023AB /* libsource-highlight.a */,
 				93ADF7BF1412AD5900D4B5DD /* AppKit.framework */,
 				93A346C1140168C400159929 /* WebKit.framework */,
@@ -520,7 +524,7 @@
 		93C1B8BB1253B3FE00E437E0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0410;
+				LastUpgradeCheck = 0420;
 			};
 			buildConfigurationList = 93C1B8BE1253B3FE00E437E0 /* Build configuration list for PBXProject "Rubber" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -751,7 +755,9 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "coderunner/coderunner-Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
 				MACH_O_TYPE = mh_execute;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -778,7 +784,9 @@
 				GCC_PREFIX_HEADER = "coderunner/coderunner-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "coderunner/coderunner-Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
 				MACH_O_TYPE = mh_execute;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -796,6 +804,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -808,8 +817,10 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Rubber Quicklook Plugin/Rubber Quicklook Plugin-Info.plist";
 				INSTALL_PATH = /Library/QuickLook;
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -827,6 +838,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -834,8 +846,10 @@
 				GCC_PREFIX_HEADER = "Rubber Quicklook Plugin/Rubber Quicklook Plugin-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Rubber Quicklook Plugin/Rubber Quicklook Plugin-Info.plist";
 				INSTALL_PATH = /Library/QuickLook;
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -868,6 +882,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "hilite/hilite-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -878,7 +893,6 @@
 					"-framework",
 					Foundation,
 					"-lobjc",
-					"-lboost_regex-mt",
 				);
 				PRODUCT_NAME = "stuffediggy.$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -901,6 +915,7 @@
 				GCC_PREFIX_HEADER = "hilite/hilite-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "hilite/hilite-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -911,7 +926,6 @@
 					"-framework",
 					Foundation,
 					"-lobjc",
-					"-lboost_regex-mt",
 				);
 				PRODUCT_NAME = "stuffediggy.$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -924,6 +938,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -936,9 +951,12 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Rubber Spotlight Importer/Rubber Spotlight Importer-Info.plist";
 				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_SEARCH_PATHS = "";
 				LIBRARY_STYLE = BUNDLE;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = mdimporter;
@@ -950,6 +968,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -957,9 +976,12 @@
 				GCC_PREFIX_HEADER = "Rubber Spotlight Importer/Rubber Spotlight Importer-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Rubber Spotlight Importer/Rubber Spotlight Importer-Info.plist";
 				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_SEARCH_PATHS = "";
 				LIBRARY_STYLE = BUNDLE;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = mdimporter;
@@ -978,11 +1000,11 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = /usr/local/include/boost;
-				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-lboost_regex-mt";
+				OTHER_LDFLAGS = "";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -997,10 +1019,10 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = /usr/local/include/boost;
-				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_LDFLAGS = "-lboost_regex-mt";
+				OTHER_LDFLAGS = "";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -1009,6 +1031,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = Rubber.entitlements;
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
@@ -1032,6 +1055,7 @@
 					"\"$(SDKROOT)/usr/lib/system\"",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = Rubber;
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -1043,6 +1067,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = Rubber.entitlements;
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
@@ -1066,6 +1091,7 @@
 					"\"$(SDKROOT)/usr/lib/system\"",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = Rubber;
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "";
