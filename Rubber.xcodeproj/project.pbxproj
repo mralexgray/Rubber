@@ -524,7 +524,7 @@
 		93C1B8BB1253B3FE00E437E0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0440;
 			};
 			buildConfigurationList = 93C1B8BE1253B3FE00E437E0 /* Build configuration list for PBXProject "Rubber" */;
 			compatibilityVersion = "Xcode 3.2";
