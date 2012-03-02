@@ -19,9 +19,6 @@
 		933EF8E5125C113000845394 /* ADTextMungingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933EF8E4125C113000845394 /* ADTextMungingController.m */; };
 		93466DA513F57A56008DEA3B /* ADTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93466DA413F57A56008DEA3B /* ADTextView.m */; };
 		9347F939140F14A800CC1AC3 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9347F938140F14A800CC1AC3 /* QuickLook.framework */; };
-		9347F93B140F14A800CC1AC3 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9347F93A140F14A800CC1AC3 /* ApplicationServices.framework */; };
-		9347F93D140F14A800CC1AC3 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9347F93C140F14A800CC1AC3 /* CoreServices.framework */; };
-		9347F93F140F14A800CC1AC3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9347F93E140F14A800CC1AC3 /* CoreFoundation.framework */; };
 		9347F945140F14A800CC1AC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9347F943140F14A800CC1AC3 /* InfoPlist.strings */; };
 		9347F947140F14A800CC1AC3 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 9347F946140F14A800CC1AC3 /* GenerateThumbnailForURL.c */; };
 		9347F949140F14A800CC1AC3 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 9347F948140F14A800CC1AC3 /* GeneratePreviewForURL.c */; };
@@ -37,9 +34,6 @@
 		937A641E1256A2E900B0D4AC /* ADEquationRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 937A641D1256A2E900B0D4AC /* ADEquationRenderer.m */; };
 		937A64481256AA4E00B0D4AC /* ASCIIMathML.js in Resources */ = {isa = PBXBuildFile; fileRef = 937A641F1256A80A00B0D4AC /* ASCIIMathML.js */; };
 		937D6651140F313800BBDC6A /* ADTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 933EF8AF125BEC2F00845394 /* ADTextAttachment.m */; };
-		937D6657140F393D00BBDC6A /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9347F93C140F14A800CC1AC3 /* CoreServices.framework */; };
-		937D6658140F393D00BBDC6A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9347F93E140F14A800CC1AC3 /* CoreFoundation.framework */; };
-		937D665C140F393D00BBDC6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937D665B140F393D00BBDC6A /* Foundation.framework */; };
 		937D6662140F393D00BBDC6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 937D6660140F393D00BBDC6A /* InfoPlist.strings */; };
 		937D6664140F393D00BBDC6A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 937D6663140F393D00BBDC6A /* main.c */; };
 		937D6666140F393D00BBDC6A /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 937D6665140F393D00BBDC6A /* GetMetadataForFile.m */; };
@@ -117,9 +111,6 @@
 		93466DA413F57A56008DEA3B /* ADTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADTextView.m; sourceTree = "<group>"; };
 		9347F937140F14A800CC1AC3 /* Rubber Quicklook Plugin.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rubber Quicklook Plugin.qlgenerator"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9347F938140F14A800CC1AC3 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
-		9347F93A140F14A800CC1AC3 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
-		9347F93C140F14A800CC1AC3 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
-		9347F93E140F14A800CC1AC3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		9347F942140F14A800CC1AC3 /* Rubber Quicklook Plugin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rubber Quicklook Plugin-Info.plist"; sourceTree = "<group>"; };
 		9347F944140F14A800CC1AC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9347F946140F14A800CC1AC3 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
@@ -138,8 +129,6 @@
 		937A641D1256A2E900B0D4AC /* ADEquationRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADEquationRenderer.m; sourceTree = "<group>"; };
 		937A641F1256A80A00B0D4AC /* ASCIIMathML.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ASCIIMathML.js; sourceTree = "<group>"; };
 		937D6656140F393D00BBDC6A /* Rubber Spotlight Importer.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rubber Spotlight Importer.mdimporter"; sourceTree = BUILT_PRODUCTS_DIR; };
-		937D6659140F393D00BBDC6A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		937D665B140F393D00BBDC6A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		937D665F140F393D00BBDC6A /* Rubber Spotlight Importer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rubber Spotlight Importer-Info.plist"; sourceTree = "<group>"; };
 		937D6661140F393D00BBDC6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		937D6663140F393D00BBDC6A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
@@ -183,9 +172,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9347F939140F14A800CC1AC3 /* QuickLook.framework in Frameworks */,
-				9347F93B140F14A800CC1AC3 /* ApplicationServices.framework in Frameworks */,
-				9347F93D140F14A800CC1AC3 /* CoreServices.framework in Frameworks */,
-				9347F93F140F14A800CC1AC3 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,10 +188,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				937D6657140F393D00BBDC6A /* CoreServices.framework in Frameworks */,
-				937D6658140F393D00BBDC6A /* CoreFoundation.framework in Frameworks */,
 				93ADF7C11412AD6400D4B5DD /* AppKit.framework in Frameworks */,
-				937D665C140F393D00BBDC6A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,11 +377,6 @@
 				93DB911412624FF100A1ECA0 /* QuartzCore.framework */,
 				93C1B8CB1253B3FE00E437E0 /* Cocoa.framework */,
 				9347F938140F14A800CC1AC3 /* QuickLook.framework */,
-				9347F93A140F14A800CC1AC3 /* ApplicationServices.framework */,
-				9347F93C140F14A800CC1AC3 /* CoreServices.framework */,
-				9347F93E140F14A800CC1AC3 /* CoreFoundation.framework */,
-				937D6659140F393D00BBDC6A /* CoreData.framework */,
-				937D665B140F393D00BBDC6A /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
