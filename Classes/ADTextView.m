@@ -176,6 +176,20 @@
             [[self textStorage] endEditing];
         }
         return YES;
+    } else if ([type isEqualToString:NSRTFPboardType]) {
+        NSAttributedString *pastedString = [[NSAttributedString alloc] initWithRTF:[pboard dataForType:NSRTFPboardType] documentAttributes:NULL];
+        [self shouldChangeTextInRange:[self selectedRange] replacementString:[pastedString string]];
+        [[self textStorage] beginEditing];
+        [[self textStorage] replaceCharactersInRange:[self selectedRange] withAttributedString:pastedString];
+        [[self textStorage] endEditing];
+        return YES;
+    } else if ([type isEqualToString:NSStringPboardType]) {
+        NSString *pastedString = [[NSString alloc] initWithData:[pboard dataForType:NSStringPboardType] encoding:NSUTF8StringEncoding];
+        [self shouldChangeTextInRange:[self selectedRange] replacementString:pastedString];
+        [[self textStorage] beginEditing];
+        [self replaceCharactersInRange:[self selectedRange] withString:pastedString];
+        [[self textStorage] endEditing];
+        return YES;
     } else {
         return [super readSelectionFromPasteboard:pboard type:type];
     }
@@ -198,6 +212,8 @@
 - (NSArray *)readablePasteboardTypes {
     NSMutableArray *types = [NSMutableArray arrayWithArray:[super writablePasteboardTypes]];
     [types addObject:@"ADRubberType"];
+    [types addObject:NSRTFPboardType];
+    [types addObject:NSStringPboardType];
     return types;
 }
 
