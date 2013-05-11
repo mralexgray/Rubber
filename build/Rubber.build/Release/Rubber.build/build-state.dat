@@ -1,0 +1,572 @@
+TRubber
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Info.plist Rubber-Info.plist
+cProcessPCH /var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-fvqmfpacfqpfwycpxmsdxbytdchf/Rubber_Prefix.pch.pth Rubber_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH++ /var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-gcgyznbqoxtmtnbszlezgofpszsf/Rubber_Prefix.pch.pth Rubber_Prefix.pch normal x86_64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADDocumentView.o /Volumes/2T/ServiceData/git/Rubber/Classes/ADDocumentView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/main.o /Volumes/2T/ServiceData/git/Rubber/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADDocument.o /Volumes/2T/ServiceData/git/Rubber/Classes/ADDocument.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADEquationRenderer.o /Volumes/2T/ServiceData/git/Rubber/Classes/ADEquationRenderer.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADTextAttachment.o /Volumes/2T/ServiceData/git/Rubber/Classes/ADTextAttachment.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADTextMungingController.o /Volumes/2T/ServiceData/git/Rubber/Classes/ADTextMungingController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADTextView.o /Volumes/2T/ServiceData/git/Rubber/Classes/ADTextView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADCodePopoverViewController.o /Volumes/2T/ServiceData/git/Rubber/Classes/ADCodePopoverViewController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADCodeController.o /Volumes/2T/ServiceData/git/Rubber/Classes/ADCodeController.m normal x86_64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/MacOS/Rubber normal x86_64
+cGenerateDSYMFile /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app.dSYM /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/MacOS/Rubber
+cCpResource ASCIIMathML.js build/Release/Rubber.app/Contents/Resources/ASCIIMathML.js
+cCompileXIB /Volumes/2T/ServiceData/git/Rubber/en.lproj/MainMenu.xib
+cCpResource en.lproj/Credits.rtf build/Release/Rubber.app/Contents/Resources/en.lproj/Credits.rtf
+cCopyStringsFile /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Resources/en.lproj/InfoPlist.strings en.lproj/InfoPlist.strings
+cCompileXIB /Volumes/2T/ServiceData/git/Rubber/en.lproj/ADDocument.xib
+cCpResource rubber.icns build/Release/Rubber.app/Contents/Resources/rubber.icns
+cCompileXIB /Volumes/2T/ServiceData/git/Rubber/Classes/ADCodePopoverViewController.xib
+cCpResource DocumentIcon.icns build/Release/Rubber.app/Contents/Resources/DocumentIcon.icns
+cPBXCp build/Release/stuffediggy.hilite.xpc build/Release/Rubber.app/Contents/XPCServices/stuffediggy.hilite.xpc
+cPBXCp build/Release/stuffediggy.coderunner.xpc build/Release/Rubber.app/Contents/XPCServices/stuffediggy.coderunner.xpc
+cPBXCp "build/Release/Rubber Quicklook Plugin.qlgenerator" "build/Release/Rubber.app/Contents/Library/QuickLook/Rubber Quicklook Plugin.qlgenerator"
+cPBXCp "build/Release/Rubber Spotlight Importer.mdimporter" "build/Release/Rubber.app/Contents/Library/Spotlight/Rubber Spotlight Importer.mdimporter"
+cTouch /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c000000005130312F00000000000000AA
+t1362112815
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+c00000000516E0A7000000000000025C8
+t1366166128
+s9672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/WebKit.framework/WebKit
+c00000000516E0A760000000000087CE4
+t1366166134
+s556260
+
+N/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000005146566F0000000000478BB0
+t1363564143
+s4688816
+
+N/Volumes/2T/ServiceData/git/Rubber/ASCIIMathML.js
+c000000005080C0FC000000000004B5FF
+t1350615292
+s308735
+
+N/Volumes/2T/ServiceData/git/Rubber/Classes/ADCodeController.m
+c000000005080C0FC0000000000002727
+t1350615292
+s10023
+
+N/Volumes/2T/ServiceData/git/Rubber/Classes/ADCodePopoverViewController.m
+c000000005080C0FC000000000000041A
+t1350615292
+s1050
+
+N/Volumes/2T/ServiceData/git/Rubber/Classes/ADCodePopoverViewController.xib
+c000000005080C0FC0000000000003BFC
+t1350615292
+s15356
+
+N/Volumes/2T/ServiceData/git/Rubber/Classes/ADDocument.m
+c000000005080C0FC0000000000000979
+t1350615292
+s2425
+
+N/Volumes/2T/ServiceData/git/Rubber/Classes/ADDocumentView.m
+c000000005080C0FC0000000000002FF4
+t1350615292
+s12276
+
+N/Volumes/2T/ServiceData/git/Rubber/Classes/ADEquationRenderer.m
+c000000005080C0FC0000000000000D6A
+t1350615292
+s3434
+
+N/Volumes/2T/ServiceData/git/Rubber/Classes/ADTextAttachment.m
+c000000005080C0FC0000000000000304
+t1350615292
+s772
+
+N/Volumes/2T/ServiceData/git/Rubber/Classes/ADTextMungingController.m
+c000000005080C0FC0000000000002A49
+t1350615292
+s10825
+
+N/Volumes/2T/ServiceData/git/Rubber/Classes/ADTextView.m
+c000000005080C0FC000000000000259F
+t1350615292
+s9631
+
+N/Volumes/2T/ServiceData/git/Rubber/DocumentIcon.icns
+c000000005080C0FC0000000000038AB0
+t1350615292
+s232112
+
+N/Volumes/2T/ServiceData/git/Rubber/Rubber_Prefix.pch
+c000000005080C0FC000000000000008F
+t1350615292
+s143
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber Quicklook Plugin.qlgenerator
+c00000000000000000000000000000000
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber Spotlight Importer.mdimporter
+c00000000000000000000000000000000
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app.dSYM
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Info.plist
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Library/QuickLook/Rubber Quicklook Plugin.qlgenerator
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Library/Spotlight/Rubber Spotlight Importer.mdimporter
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/MacOS/Rubber
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/PkgInfo
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Resources/ADCodePopoverViewController.nib
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Resources/ASCIIMathML.js
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Resources/DocumentIcon.icns
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Resources/en.lproj/ADDocument.nib
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Resources/en.lproj/Credits.rtf
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Resources/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Resources/en.lproj/MainMenu.nib
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Resources/rubber.icns
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/XPCServices/stuffediggy.coderunner.xpc
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/XPCServices/stuffediggy.hilite.xpc
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Release/stuffediggy.coderunner.xpc
+c00000000000000000000000000000000
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Release/stuffediggy.hilite.xpc
+c00000000000000000000000000000000
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADCodeController.o
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADCodePopoverViewController.o
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADDocument.o
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADDocumentView.o
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADEquationRenderer.o
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADTextAttachment.o
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADTextMungingController.o
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADTextView.o
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/Rubber.LinkFileList
+c00000000518E0A53000000000000040E
+t1368263251
+s1038
+
+N/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/Rubber/en.lproj/ADDocument.xib
+c000000005080C0FC00000000000033E3
+t1350615292
+s13283
+
+N/Volumes/2T/ServiceData/git/Rubber/en.lproj/Credits.rtf
+c000000005080C0FC00000000000001B4
+t1350615292
+s436
+
+N/Volumes/2T/ServiceData/git/Rubber/en.lproj/InfoPlist.strings
+c000000005080C0FC0000000000000061
+t1350615292
+s97
+
+N/Volumes/2T/ServiceData/git/Rubber/en.lproj/MainMenu.xib
+c000000005080C0FC000000000002B518
+t1350615292
+s177432
+
+N/Volumes/2T/ServiceData/git/Rubber/main.m
+c000000005080C0FC0000000000000100
+t1350615292
+s256
+
+N/Volumes/2T/ServiceData/git/Rubber/rubber.icns
+c000000005080C0FC0000000000061E1A
+t1350615292
+s400922
+
+N/var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-fvqmfpacfqpfwycpxmsdxbytdchf/Rubber_Prefix.pch.pth
+t2
+s0
+
+N/var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-gcgyznbqoxtmtnbszlezgofpszsf/Rubber_Prefix.pch.pth
+t2
+s0
+
+NRubber-Info.plist
+c000000005080C0FC00000000000008A4
+t1350615292
+s2212
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies3c4bd8d1413eb741^e84b03d3413eb741^---0#1#0#--18"Check dependencies36"47F3001B-A61E-4BB0-8BF6-69D5CBD04080-
+
+CCompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADCodeController.o /Volumes/2T/ServiceData/git/Rubber/Classes/ADCodeController.m normal x86_64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s389956053.144610
+e389956053.494533
+r1
+xCompileC
+xbuild/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADCodeController.o
+x/Volumes/2T/ServiceData/git/Rubber/Classes/ADCodeController.m
+xnormal
+xx86_64
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Volumes/2T/ServiceData/git/Rubber/Classes/ADCodeController.m5a2c25d5413eb741^1f9d7ed5413eb741^---0#0#0#-19%DVTDocumentLocation2@77"file://localhost/Volumes/2T/ServiceData/git/Rubber/Classes/ADCodeController.m0000000000000000^2834"CompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADCodeController.o Classes/ADCodeController.m normal x86_64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/2T/ServiceData/git/Rubber    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch x86_64 -fmessage-length=0 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-generated-files.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-own-target-headers.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-all-target-headers.hmap -iquote /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-project-headers.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Release/include -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/DerivedSources/x86_64 -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/DerivedSources -F/Volumes/2T/ServiceData/git/Rubber/build/Release -F/Volumes/2T/ServiceData/git/Rubber -include /var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-gcgyznbqoxtmtnbszlezgofpszsf/Rubber_Prefix.pch -MMD -MT dependencies -MF /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADCodeController.d --serialize-diagnostics /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADCodeController.dia -c /Volumes/2T/ServiceData/git/Rubber/Classes/ADCodeController.m -o /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADCodeController.o36"3B0D1B7D-2780-4AC9-87BD-1672C0097116-
+
+CCompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADCodePopoverViewController.o /Volumes/2T/ServiceData/git/Rubber/Classes/ADCodePopoverViewController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s389956053.125778
+e389956053.325825
+r1
+xCompileC
+xbuild/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADCodePopoverViewController.o
+x/Volumes/2T/ServiceData/git/Rubber/Classes/ADCodePopoverViewController.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Volumes/2T/ServiceData/git/Rubber/Classes/ADCodePopoverViewController.m325920d5413eb741^e86a53d5413eb741^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Volumes/2T/ServiceData/git/Rubber/Classes/ADCodePopoverViewController.m0000000000000000^2780"CompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADCodePopoverViewController.o Classes/ADCodePopoverViewController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/2T/ServiceData/git/Rubber    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-generated-files.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-own-target-headers.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-all-target-headers.hmap -iquote /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-project-headers.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Release/include -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/DerivedSources/x86_64 -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/DerivedSources -F/Volumes/2T/ServiceData/git/Rubber/build/Release -F/Volumes/2T/ServiceData/git/Rubber -include /var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-fvqmfpacfqpfwycpxmsdxbytdchf/Rubber_Prefix.pch -MMD -MT dependencies -MF /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADCodePopoverViewController.d --serialize-diagnostics /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADCodePopoverViewController.dia -c /Volumes/2T/ServiceData/git/Rubber/Classes/ADCodePopoverViewController.m -o /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADCodePopoverViewController.o36"72B15FAF-740D-48AA-B7EF-0BD0984182E6-
+
+CCompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADDocument.o /Volumes/2T/ServiceData/git/Rubber/Classes/ADDocument.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s389956052.138759
+e389956053.401627
+r1
+xCompileC
+xbuild/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADDocument.o
+x/Volumes/2T/ServiceData/git/Rubber/Classes/ADDocument.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Volumes/2T/ServiceData/git/Rubber/Classes/ADDocument.m76dd23d4413eb741^3ed066d5413eb741^---0#0#0#-19%DVTDocumentLocation2@71"file://localhost/Volumes/2T/ServiceData/git/Rubber/Classes/ADDocument.m0000000000000000^2678"CompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADDocument.o Classes/ADDocument.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/2T/ServiceData/git/Rubber    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-generated-files.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-own-target-headers.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-all-target-headers.hmap -iquote /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-project-headers.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Release/include -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/DerivedSources/x86_64 -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/DerivedSources -F/Volumes/2T/ServiceData/git/Rubber/build/Release -F/Volumes/2T/ServiceData/git/Rubber -include /var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-fvqmfpacfqpfwycpxmsdxbytdchf/Rubber_Prefix.pch -MMD -MT dependencies -MF /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADDocument.d --serialize-diagnostics /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADDocument.dia -c /Volumes/2T/ServiceData/git/Rubber/Classes/ADDocument.m -o /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADDocument.o36"C1B1392F-82DA-42D9-A860-B26457B2F937-
+
+CCompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADDocumentView.o /Volumes/2T/ServiceData/git/Rubber/Classes/ADDocumentView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s389956052.138667
+e389956053.534676
+r1
+xCompileC
+xbuild/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADDocumentView.o
+x/Volumes/2T/ServiceData/git/Rubber/Classes/ADDocumentView.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Volumes/2T/ServiceData/git/Rubber/Classes/ADDocumentView.m19e323d4413eb741^8ae788d5413eb741^---0#0#0#-19%DVTDocumentLocation2@75"file://localhost/Volumes/2T/ServiceData/git/Rubber/Classes/ADDocumentView.m0000000000000000^2702"CompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADDocumentView.o Classes/ADDocumentView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/2T/ServiceData/git/Rubber    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-generated-files.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-own-target-headers.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-all-target-headers.hmap -iquote /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-project-headers.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Release/include -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/DerivedSources/x86_64 -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/DerivedSources -F/Volumes/2T/ServiceData/git/Rubber/build/Release -F/Volumes/2T/ServiceData/git/Rubber -include /var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-fvqmfpacfqpfwycpxmsdxbytdchf/Rubber_Prefix.pch -MMD -MT dependencies -MF /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADDocumentView.d --serialize-diagnostics /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADDocumentView.dia -c /Volumes/2T/ServiceData/git/Rubber/Classes/ADDocumentView.m -o /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADDocumentView.o36"0DFA66A1-E947-484A-91FC-A6E43F7ECEC3-
+
+CCompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADEquationRenderer.o /Volumes/2T/ServiceData/git/Rubber/Classes/ADEquationRenderer.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s389956052.138891
+e389956053.436917
+r1
+xCompileC
+xbuild/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADEquationRenderer.o
+x/Volumes/2T/ServiceData/git/Rubber/Classes/ADEquationRenderer.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Volumes/2T/ServiceData/git/Rubber/Classes/ADEquationRenderer.m40bf23d4413eb741^d7da6fd5413eb741^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Volumes/2T/ServiceData/git/Rubber/Classes/ADEquationRenderer.m0000000000000000^2726"CompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADEquationRenderer.o Classes/ADEquationRenderer.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/2T/ServiceData/git/Rubber    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-generated-files.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-own-target-headers.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-all-target-headers.hmap -iquote /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-project-headers.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Release/include -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/DerivedSources/x86_64 -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/DerivedSources -F/Volumes/2T/ServiceData/git/Rubber/build/Release -F/Volumes/2T/ServiceData/git/Rubber -include /var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-fvqmfpacfqpfwycpxmsdxbytdchf/Rubber_Prefix.pch -MMD -MT dependencies -MF /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADEquationRenderer.d --serialize-diagnostics /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADEquationRenderer.dia -c /Volumes/2T/ServiceData/git/Rubber/Classes/ADEquationRenderer.m -o /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADEquationRenderer.o36"45184327-C93E-4C4B-9A72-6634B0D98CC9-
+
+CCompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADTextAttachment.o /Volumes/2T/ServiceData/git/Rubber/Classes/ADTextAttachment.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s389956052.138928
+e389956053.199691
+r1
+xCompileC
+xbuild/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADTextAttachment.o
+x/Volumes/2T/ServiceData/git/Rubber/Classes/ADTextAttachment.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Volumes/2T/ServiceData/git/Rubber/Classes/ADTextAttachment.m37c123d4413eb741^789733d5413eb741^---0#0#0#-19%DVTDocumentLocation2@77"file://localhost/Volumes/2T/ServiceData/git/Rubber/Classes/ADTextAttachment.m0000000000000000^2714"CompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADTextAttachment.o Classes/ADTextAttachment.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/2T/ServiceData/git/Rubber    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-generated-files.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-own-target-headers.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-all-target-headers.hmap -iquote /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-project-headers.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Release/include -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/DerivedSources/x86_64 -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/DerivedSources -F/Volumes/2T/ServiceData/git/Rubber/build/Release -F/Volumes/2T/ServiceData/git/Rubber -include /var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-fvqmfpacfqpfwycpxmsdxbytdchf/Rubber_Prefix.pch -MMD -MT dependencies -MF /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADTextAttachment.d --serialize-diagnostics /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADTextAttachment.dia -c /Volumes/2T/ServiceData/git/Rubber/Classes/ADTextAttachment.m -o /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADTextAttachment.o36"3CE06790-2968-4751-AC10-CEA8DE2EB36B-
+
+CCompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADTextMungingController.o /Volumes/2T/ServiceData/git/Rubber/Classes/ADTextMungingController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s389956052.139910
+e389956053.495286
+r1
+xCompileC
+xbuild/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADTextMungingController.o
+x/Volumes/2T/ServiceData/git/Rubber/Classes/ADTextMungingController.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Volumes/2T/ServiceData/git/Rubber/Classes/ADTextMungingController.mf9f523d4413eb741^b0c97ed5413eb741^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Volumes/2T/ServiceData/git/Rubber/Classes/ADTextMungingController.m0000000000000000^2756"CompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADTextMungingController.o Classes/ADTextMungingController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/2T/ServiceData/git/Rubber    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-generated-files.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-own-target-headers.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-all-target-headers.hmap -iquote /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-project-headers.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Release/include -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/DerivedSources/x86_64 -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/DerivedSources -F/Volumes/2T/ServiceData/git/Rubber/build/Release -F/Volumes/2T/ServiceData/git/Rubber -include /var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-fvqmfpacfqpfwycpxmsdxbytdchf/Rubber_Prefix.pch -MMD -MT dependencies -MF /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADTextMungingController.d --serialize-diagnostics /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADTextMungingController.dia -c /Volumes/2T/ServiceData/git/Rubber/Classes/ADTextMungingController.m -o /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADTextMungingController.o36"7AFE20D4-1ABD-4588-ADCE-AB781E604BF2-
+
+CCompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADTextView.o /Volumes/2T/ServiceData/git/Rubber/Classes/ADTextView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s389956052.139950
+e389956053.285886
+r1
+xCompileC
+xbuild/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADTextView.o
+x/Volumes/2T/ServiceData/git/Rubber/Classes/ADTextView.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Volumes/2T/ServiceData/git/Rubber/Classes/ADTextView.m7bf723d4413eb741^f92e49d5413eb741^---0#0#0#-19%DVTDocumentLocation2@71"file://localhost/Volumes/2T/ServiceData/git/Rubber/Classes/ADTextView.m0000000000000000^2678"CompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADTextView.o Classes/ADTextView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/2T/ServiceData/git/Rubber    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-generated-files.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-own-target-headers.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-all-target-headers.hmap -iquote /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-project-headers.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Release/include -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/DerivedSources/x86_64 -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/DerivedSources -F/Volumes/2T/ServiceData/git/Rubber/build/Release -F/Volumes/2T/ServiceData/git/Rubber -include /var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-fvqmfpacfqpfwycpxmsdxbytdchf/Rubber_Prefix.pch -MMD -MT dependencies -MF /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADTextView.d --serialize-diagnostics /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADTextView.dia -c /Volumes/2T/ServiceData/git/Rubber/Classes/ADTextView.m -o /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/ADTextView.o36"0A48BE96-CE4B-42BD-8E5B-1C7A7616C511-
+
+CCompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/main.o /Volumes/2T/ServiceData/git/Rubber/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s389956052.138676
+e389956053.143233
+r1
+xCompileC
+xbuild/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/main.o
+x/Volumes/2T/ServiceData/git/Rubber/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Compile /Volumes/2T/ServiceData/git/Rubber/main.md7bf23d4413eb741^32aa24d5413eb741^---0#0#0#-19%DVTDocumentLocation2@57"file://localhost/Volumes/2T/ServiceData/git/Rubber/main.m0000000000000000^2626"CompileC build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/main.o main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/2T/ServiceData/git/Rubber    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-generated-files.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-own-target-headers.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-all-target-headers.hmap -iquote /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-project-headers.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Release/include -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/DerivedSources/x86_64 -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/DerivedSources -F/Volumes/2T/ServiceData/git/Rubber/build/Release -F/Volumes/2T/ServiceData/git/Rubber -include /var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-fvqmfpacfqpfwycpxmsdxbytdchf/Rubber_Prefix.pch -MMD -MT dependencies -MF /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/main.dia -c /Volumes/2T/ServiceData/git/Rubber/main.m -o /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/main.o36"73756B97-2593-403B-86CD-E474117E6414-
+
+CCompileXIB /Volumes/2T/ServiceData/git/Rubber/Classes/ADCodePopoverViewController.xib
+s389956054.401578
+e389956055.527958
+r1
+xCompileXIB
+x/Volumes/2T/ServiceData/git/Rubber/Classes/ADCodePopoverViewController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compiling /Volumes/2T/ServiceData/git/Rubber/Classes/ADCodePopoverViewController.xibba1067d6413eb741^736687d7413eb741^---0#0#0#-19%DVTDocumentLocation2@90"file://localhost/Volumes/2T/ServiceData/git/Rubber/Classes/ADCodePopoverViewController.xib0000000000000000^612"CompileXIB Classes/ADCodePopoverViewController.xib    cd /Volumes/2T/ServiceData/git/Rubber    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Resources/ADCodePopoverViewController.nib /Volumes/2T/ServiceData/git/Rubber/Classes/ADCodePopoverViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk36"D02325D9-C4FA-40B3-8244-39F302B5D9ED-
+
+CCompileXIB /Volumes/2T/ServiceData/git/Rubber/en.lproj/ADDocument.xib
+s389956054.401542
+e389956055.529419
+r1
+xCompileXIB
+x/Volumes/2T/ServiceData/git/Rubber/en.lproj/ADDocument.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compiling /Volumes/2T/ServiceData/git/Rubber/en.lproj/ADDocument.xibbe1367d6413eb741^ae9e87d7413eb741^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Volumes/2T/ServiceData/git/Rubber/en.lproj/ADDocument.xib0000000000000000^572"CompileXIB en.lproj/ADDocument.xib    cd /Volumes/2T/ServiceData/git/Rubber    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Resources/en.lproj/ADDocument.nib /Volumes/2T/ServiceData/git/Rubber/en.lproj/ADDocument.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk36"CD190CE3-9296-4B91-A31A-575BD669154F-
+
+CCompileXIB /Volumes/2T/ServiceData/git/Rubber/en.lproj/MainMenu.xib
+s389956054.400991
+e389956055.835087
+r1
+xCompileXIB
+x/Volumes/2T/ServiceData/git/Rubber/en.lproj/MainMenu.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compiling /Volumes/2T/ServiceData/git/Rubber/en.lproj/MainMenu.xib3cf766d6413eb741^b8c8d5d7413eb741^---0#0#0#-19%DVTDocumentLocation2@72"file://localhost/Volumes/2T/ServiceData/git/Rubber/en.lproj/MainMenu.xib0000000000000000^566"CompileXIB en.lproj/MainMenu.xib    cd /Volumes/2T/ServiceData/git/Rubber    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Resources/en.lproj/MainMenu.nib /Volumes/2T/ServiceData/git/Rubber/en.lproj/MainMenu.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk36"D4A6DC33-A8E1-47E8-9026-093E11E00E0D-
+
+CCopyStringsFile /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Resources/en.lproj/InfoPlist.strings en.lproj/InfoPlist.strings
+s389956054.401273
+e389956054.464372
+r1
+xCopyStringsFile
+x/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Resources/en.lproj/InfoPlist.strings
+xen.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection31"Copy en.lproj/InfoPlist.stringsde0067d6413eb741^fcde76d6413eb741^---0#0#0#-19%DVTDocumentLocation2@77"file://localhost/Volumes/2T/ServiceData/git/Rubber/en.lproj/InfoPlist.strings0000000000000000^364"CopyStringsFile build/Release/Rubber.app/Contents/Resources/en.lproj/InfoPlist.strings en.lproj/InfoPlist.strings    cd /Volumes/2T/ServiceData/git/Rubber    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding UTF-16 --outdir /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Resources/en.lproj -- en.lproj/InfoPlist.strings36"D4B4EF16-D67D-4FBA-A6CC-68080AABE740-
+
+CCpResource ASCIIMathML.js build/Release/Rubber.app/Contents/Resources/ASCIIMathML.js
+s389956054.400937
+e389956054.532151
+r1
+xCpResource
+xASCIIMathML.js
+xbuild/Release/Rubber.app/Contents/Resources/ASCIIMathML.js
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Copy build/Release/Rubber.app/Contents/Resources/ASCIIMathML.js09ff66d6413eb741^bf4888d6413eb741^---0#0#0#-19%DVTDocumentLocation2@109"file://localhost/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Resources/ASCIIMathML.js000000000080d041^494"CpResource ASCIIMathML.js build/Release/Rubber.app/Contents/Resources/ASCIIMathML.js    cd /Volumes/2T/ServiceData/git/Rubber    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Volumes/2T/ServiceData/git/Rubber/ASCIIMathML.js /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Resources36"E0AFAFFB-5621-47A1-83D9-BA8FC811E562-
+
+CCpResource DocumentIcon.icns build/Release/Rubber.app/Contents/Resources/DocumentIcon.icns
+s389956054.401628
+e389956054.462062
+r1
+xCpResource
+xDocumentIcon.icns
+xbuild/Release/Rubber.app/Contents/Resources/DocumentIcon.icns
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Copy build/Release/Rubber.app/Contents/Resources/DocumentIcon.icnse10767d6413eb741^9d6576d6413eb741^---0#0#0#-19%DVTDocumentLocation2@112"file://localhost/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Resources/DocumentIcon.icns000000000080d041^503"CpResource DocumentIcon.icns build/Release/Rubber.app/Contents/Resources/DocumentIcon.icns    cd /Volumes/2T/ServiceData/git/Rubber    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Volumes/2T/ServiceData/git/Rubber/DocumentIcon.icns /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Resources36"406D2F6E-4789-4A90-A8CA-C807DDB20EBA-
+
+CCpResource en.lproj/Credits.rtf build/Release/Rubber.app/Contents/Resources/en.lproj/Credits.rtf
+s389956054.401046
+e389956054.462075
+r1
+xCpResource
+xen.lproj/Credits.rtf
+xbuild/Release/Rubber.app/Contents/Resources/en.lproj/Credits.rtf
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Copy build/Release/Rubber.app/Contents/Resources/en.lproj/Credits.rtf48fc66d6413eb741^e86b76d6413eb741^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Resources/en.lproj/Credits.rtf000000000080d041^521"CpResource en.lproj/Credits.rtf build/Release/Rubber.app/Contents/Resources/en.lproj/Credits.rtf    cd /Volumes/2T/ServiceData/git/Rubber    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Volumes/2T/ServiceData/git/Rubber/en.lproj/Credits.rtf /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Resources/en.lproj36"7381C92F-C296-40E2-8FD7-11BD543586F0-
+
+CCpResource rubber.icns build/Release/Rubber.app/Contents/Resources/rubber.icns
+s389956054.401555
+e389956054.463566
+r1
+xCpResource
+xrubber.icns
+xbuild/Release/Rubber.app/Contents/Resources/rubber.icns
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy build/Release/Rubber.app/Contents/Resources/rubber.icns960967d6413eb741^82ad76d6413eb741^---0#0#0#-19%DVTDocumentLocation2@106"file://localhost/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Resources/rubber.icns000000000080d041^485"CpResource rubber.icns build/Release/Rubber.app/Contents/Resources/rubber.icns    cd /Volumes/2T/ServiceData/git/Rubber    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Volumes/2T/ServiceData/git/Rubber/rubber.icns /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Resources36"90F487BA-99E2-48F5-8548-680159A62906-
+
+CGenerateDSYMFile /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app.dSYM /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/MacOS/Rubber
+s389956054.253315
+e389956054.392836
+r1
+xGenerateDSYMFile
+x/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app.dSYM
+x/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/MacOS/Rubber
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Generate /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app.dSYM4ef140d6413eb741^d26e64d6413eb741^---0#0#0#-19%DVTDocumentLocation2@80"file://localhost/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app.dSYM000000000080d041^386"GenerateDSYMFile build/Release/Rubber.app.dSYM build/Release/Rubber.app/Contents/MacOS/Rubber    cd /Volumes/2T/ServiceData/git/Rubber    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/MacOS/Rubber -o /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app.dSYM36"BD02850D-5145-4E12-BE3C-4481246919D9-
+
+CLd /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/MacOS/Rubber normal x86_64
+s389956053.545414
+e389956054.246682
+r1
+xLd
+x/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/MacOS/Rubber
+xnormal
+xx86_64
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Link /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/MacOS/Rubberf12d8cd5413eb741^b3253fd6413eb741^---0#0#0#--999"Ld build/Release/Rubber.app/Contents/MacOS/Rubber normal x86_64    cd /Volumes/2T/ServiceData/git/Rubber    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Volumes/2T/ServiceData/git/Rubber/build/Release -L/usr/local -L/Volumes/2T/ServiceData/git/Rubber -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system -F/Volumes/2T/ServiceData/git/Rubber/build/Release -F/Volumes/2T/ServiceData/git/Rubber -filelist /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Objects-normal/x86_64/Rubber.LinkFileList -mmacosx-version-min=10.7 -fobjc-arc -fobjc-link-runtime -framework WebKit -framework Cocoa -framework QuartzCore -o /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/MacOS/Rubber36"A88CC833-25AE-4C3E-A590-319D7C3F5799-
+
+CPBXCp "build/Release/Rubber Quicklook Plugin.qlgenerator" "build/Release/Rubber.app/Contents/Library/QuickLook/Rubber Quicklook Plugin.qlgenerator"
+s389956055.863575
+e389956055.874232
+r0
+xPBXCp
+xbuild/Release/Rubber Quicklook Plugin.qlgenerator
+xbuild/Release/Rubber.app/Contents/Library/QuickLook/Rubber Quicklook Plugin.qlgenerator
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Copy build/Release/Rubber.app/Contents/Library/QuickLook/Rubber Quicklook Plugin.qlgeneratorec31ddd7413eb741^1ceadfd7413eb741^-118"error: /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber Quicklook Plugin.qlgenerator: No such file or directory1(21%IDEActivityLogMessage2@118"error: /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber Quicklook Plugin.qlgenerator: No such file or directory-389956055#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#11"PBXCp Error--0#0#0#-19%DVTDocumentLocation4@142"file://localhost/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Library/QuickLook/Rubber%20Quicklook%20Plugin.qlgenerator0000803d20041042^602"PBXCp "build/Release/Rubber Quicklook Plugin.qlgenerator" "build/Release/Rubber.app/Contents/Library/QuickLook/Rubber Quicklook Plugin.qlgenerator"    cd /Volumes/2T/ServiceData/git/Rubber    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks "/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber Quicklook Plugin.qlgenerator" /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Library/QuickLook36"E8E189FB-9ECE-41B9-BEBD-DC938C28B368-
+
+CPBXCp "build/Release/Rubber Spotlight Importer.mdimporter" "build/Release/Rubber.app/Contents/Library/Spotlight/Rubber Spotlight Importer.mdimporter"
+s389956055.882622
+e389956055.886557
+r0
+xPBXCp
+xbuild/Release/Rubber Spotlight Importer.mdimporter
+xbuild/Release/Rubber.app/Contents/Library/Spotlight/Rubber Spotlight Importer.mdimporter
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Copy build/Release/Rubber.app/Contents/Library/Spotlight/Rubber Spotlight Importer.mdimporter5e0fe2d7413eb741^91f3e2d7413eb741^-119"error: /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber Spotlight Importer.mdimporter: No such file or directory1(21%IDEActivityLogMessage2@119"error: /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber Spotlight Importer.mdimporter: No such file or directory-389956055#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#11"PBXCp Error--0#0#0#-19%DVTDocumentLocation4@143"file://localhost/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Library/Spotlight/Rubber%20Spotlight%20Importer.mdimporter000000000080d041^605"PBXCp "build/Release/Rubber Spotlight Importer.mdimporter" "build/Release/Rubber.app/Contents/Library/Spotlight/Rubber Spotlight Importer.mdimporter"    cd /Volumes/2T/ServiceData/git/Rubber    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks "/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber Spotlight Importer.mdimporter" /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Library/Spotlight36"A4D8B392-FC53-40B6-8BF8-16B3256FFD19-
+
+CPBXCp build/Release/stuffediggy.coderunner.xpc build/Release/Rubber.app/Contents/XPCServices/stuffediggy.coderunner.xpc
+s389956055.844751
+e389956055.855219
+r0
+xPBXCp
+xbuild/Release/stuffediggy.coderunner.xpc
+xbuild/Release/Rubber.app/Contents/XPCServices/stuffediggy.coderunner.xpc
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Copy build/Release/Rubber.app/Contents/XPCServices/stuffediggy.coderunner.xpc27a5d8d7413eb741^aef4dad7413eb741^-109"error: /Volumes/2T/ServiceData/git/Rubber/build/Release/stuffediggy.coderunner.xpc: No such file or directory1(21%IDEActivityLogMessage2@109"error: /Volumes/2T/ServiceData/git/Rubber/build/Release/stuffediggy.coderunner.xpc: No such file or directory-389956055#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#11"PBXCp Error--0#0#0#-19%DVTDocumentLocation4@123"file://localhost/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/XPCServices/stuffediggy.coderunner.xpc000000000080d041^557"PBXCp build/Release/stuffediggy.coderunner.xpc build/Release/Rubber.app/Contents/XPCServices/stuffediggy.coderunner.xpc    cd /Volumes/2T/ServiceData/git/Rubber    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Volumes/2T/ServiceData/git/Rubber/build/Release/stuffediggy.coderunner.xpc /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/XPCServices36"63CCD5F5-FA59-41C0-85C9-14325D625207-
+
+CPBXCp build/Release/stuffediggy.hilite.xpc build/Release/Rubber.app/Contents/XPCServices/stuffediggy.hilite.xpc
+s389956055.844725
+e389956055.854281
+r0
+xPBXCp
+xbuild/Release/stuffediggy.hilite.xpc
+xbuild/Release/Rubber.app/Contents/XPCServices/stuffediggy.hilite.xpc
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Copy build/Release/Rubber.app/Contents/XPCServices/stuffediggy.hilite.xpccb64d8d7413eb741^70b1dad7413eb741^-105"error: /Volumes/2T/ServiceData/git/Rubber/build/Release/stuffediggy.hilite.xpc: No such file or directory1(21%IDEActivityLogMessage2@105"error: /Volumes/2T/ServiceData/git/Rubber/build/Release/stuffediggy.hilite.xpc: No such file or directory-389956055#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#11"PBXCp Error--0#0#0#-19%DVTDocumentLocation4@119"file://localhost/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/XPCServices/stuffediggy.hilite.xpc000000000080d041^545"PBXCp build/Release/stuffediggy.hilite.xpc build/Release/Rubber.app/Contents/XPCServices/stuffediggy.hilite.xpc    cd /Volumes/2T/ServiceData/git/Rubber    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Volumes/2T/ServiceData/git/Rubber/build/Release/stuffediggy.hilite.xpc /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/XPCServices36"56A427D3-1F63-4075-A879-7239ED49A269-
+
+CProcessInfoPlistFile /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Info.plist Rubber-Info.plist
+s389956051.026075
+e389956051.083097
+r1
+xProcessInfoPlistFile
+x/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Info.plist
+xRubber-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection25"Process Rubber-Info.plist17d807d3413eb741^744515d3413eb741^---0#0#0#-19%DVTDocumentLocation2@68"file://localhost/Volumes/2T/ServiceData/git/Rubber/Rubber-Info.plist0000000000000000^383"ProcessInfoPlistFile build/Release/Rubber.app/Contents/Info.plist Rubber-Info.plist    cd /Volumes/2T/ServiceData/git/Rubber    builtin-infoPlistUtility Rubber-Info.plist -genpkginfo /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app/Contents/Info.plist36"88772024-49ED-4E4A-84D8-8ED7E3BEE5B0-
+
+CProcessPCH /var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-fvqmfpacfqpfwycpxmsdxbytdchf/Rubber_Prefix.pch.pth Rubber_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s389956051.092104
+e389956052.131662
+r1
+xProcessPCH
+x/var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-fvqmfpacfqpfwycpxmsdxbytdchf/Rubber_Prefix.pch.pth
+xRubber_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Precompile Rubber_Prefix.pch6ccc17d3413eb741^0fb521d4413eb741^---0#0#0#-19%DVTDocumentLocation2@68"file://localhost/Volumes/2T/ServiceData/git/Rubber/Rubber_Prefix.pch0000000000000000^2744"ProcessPCH /var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-fvqmfpacfqpfwycpxmsdxbytdchf/Rubber_Prefix.pch.pth Rubber_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/2T/ServiceData/git/Rubber    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-generated-files.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-own-target-headers.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-all-target-headers.hmap -iquote /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-project-headers.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Release/include -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/DerivedSources/x86_64 -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/DerivedSources -F/Volumes/2T/ServiceData/git/Rubber/build/Release -F/Volumes/2T/ServiceData/git/Rubber --serialize-diagnostics /var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-fvqmfpacfqpfwycpxmsdxbytdchf/Rubber_Prefix.pch.dia -c /Volumes/2T/ServiceData/git/Rubber/Rubber_Prefix.pch -o /var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-fvqmfpacfqpfwycpxmsdxbytdchf/Rubber_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-fvqmfpacfqpfwycpxmsdxbytdchf/Rubber_Prefix.pch.d36"5E58FAB8-1266-4CF4-84E4-EA50F003D1BF-
+
+CProcessPCH++ /var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-gcgyznbqoxtmtnbszlezgofpszsf/Rubber_Prefix.pch.pth Rubber_Prefix.pch normal x86_64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s389956051.092144
+e389956053.124292
+r1
+xProcessPCH++
+x/var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-gcgyznbqoxtmtnbszlezgofpszsf/Rubber_Prefix.pch.pth
+xRubber_Prefix.pch
+xnormal
+xx86_64
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Precompile Rubber_Prefix.pch2cd317d3413eb741^67d11fd5413eb741^---0#0#0#-19%DVTDocumentLocation2@68"file://localhost/Volumes/2T/ServiceData/git/Rubber/Rubber_Prefix.pch0000000000000000^2866"ProcessPCH++ /var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-gcgyznbqoxtmtnbszlezgofpszsf/Rubber_Prefix.pch.pth Rubber_Prefix.pch normal x86_64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/2T/ServiceData/git/Rubber    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++-header -arch x86_64 -fmessage-length=0 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-generated-files.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-own-target-headers.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-all-target-headers.hmap -iquote /Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/Rubber-project-headers.hmap -I/Volumes/2T/ServiceData/git/Rubber/build/Release/include -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/DerivedSources/x86_64 -I/Volumes/2T/ServiceData/git/Rubber/build/Rubber.build/Release/Rubber.build/DerivedSources -F/Volumes/2T/ServiceData/git/Rubber/build/Release -F/Volumes/2T/ServiceData/git/Rubber --serialize-diagnostics /var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-gcgyznbqoxtmtnbszlezgofpszsf/Rubber_Prefix.pch.dia -c /Volumes/2T/ServiceData/git/Rubber/Rubber_Prefix.pch -o /var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-gcgyznbqoxtmtnbszlezgofpszsf/Rubber_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/dw/gkhfs0nd7md6_cgq7sbzz39m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Rubber_Prefix-gcgyznbqoxtmtnbszlezgofpszsf/Rubber_Prefix.pch.d36"E964EDCE-9CE8-4420-BE6A-2D6124898866-
+
+CTouch /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app
+s389956055.895103
+e389956055.909060
+r1
+xTouch
+x/Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Touch /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.appe63ee5d7413eb741^24b9e8d7413eb741^---0#0#0#--155"Touch build/Release/Rubber.app    cd /Volumes/2T/ServiceData/git/Rubber    /usr/bin/touch -c /Volumes/2T/ServiceData/git/Rubber/build/Release/Rubber.app36"F62DCF30-DD2B-4610-9473-6752A21DFF9D-
+

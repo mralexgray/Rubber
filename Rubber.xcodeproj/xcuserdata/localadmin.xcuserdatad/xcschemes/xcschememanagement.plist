@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Rubber Quicklook Plugin.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Rubber Spotlight Importer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Rubber.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>coderunner.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>hilite.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>9329E13D1406787E00CB54EE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9347F936140F14A800CC1AC3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>934CFF7D14055AE000C24AFF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>937D6655140F393D00BBDC6A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>93C1B8C71253B3FE00E437E0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
